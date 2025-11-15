@@ -11,6 +11,7 @@ from sqlalchemy import (
     String,
     Text,
     func,
+    text,
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -52,7 +53,7 @@ class Problem(Base):
     description: Mapped[Optional[str]] = mapped_column(Text)
     problem_type: Mapped[Optional[str]] = mapped_column(String(100))
     created_at: Mapped[DateTime] = mapped_column(DateTime, server_default=func.now())
-    resolved: Mapped[bool] = mapped_column(Boolean, server_default=func.false())
+    resolved: Mapped[bool] = mapped_column(Boolean, server_default=text("false"))
 
     author: Mapped["User"] = relationship(back_populates="problems")
 
@@ -128,7 +129,7 @@ class Resource(Base):
     resource_id: Mapped[int] = mapped_column(primary_key=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.user_id"), nullable=False)
 
-    url: Mapped[str] = mapped_column(Text, unique=True, nullable=False)
+    url: Mapped[str] = mapped_column(Text, nullable=False)
     title: Mapped[Optional[str]] = mapped_column(String(500))
     source_platform: Mapped[Optional[str]] = mapped_column(String(50))
     content_summary: Mapped[Optional[str]] = mapped_column(Text)
