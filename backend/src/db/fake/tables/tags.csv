@@ -1,0 +1,57 @@
+tag_id,tag_name,category,description
+1,python,language,Python programming language
+2,javascript,language,JavaScript programming language
+3,typescript,language,TypeScript programming language
+4,java,language,Java programming language
+5,golang,language,Go programming language
+6,rust,language,Rust programming language
+7,cpp,language,C++ programming language
+8,sql,language,SQL database query language
+9,csharp,language,C# programming language
+10,ruby,language,Ruby programming language
+11,react,framework,React JavaScript library
+12,vue,framework,Vue.js framework
+13,angular,framework,Angular framework
+14,django,framework,Django Python web framework
+15,flask,framework,Flask Python web framework
+16,fastapi,framework,FastAPI Python framework
+17,spring,framework,Spring Java framework
+18,express,framework,Express.js Node framework
+19,nextjs,framework,Next.js React framework
+20,nodejs,framework,Node.js runtime environment
+21,sorting,algorithm,Sorting algorithms
+22,recursion,algorithm,Recursive problem solving
+23,dynamic-programming,algorithm,Dynamic programming approach
+24,graph-traversal,algorithm,Graph traversal algorithms
+25,binary-search,algorithm,Binary search algorithm
+26,tree,algorithm,Tree data structure and algorithms
+27,hashing,algorithm,Hash table and hashing
+28,greedy,algorithm,Greedy algorithms
+29,memory-leak,error_type,Memory leak issues
+30,null-pointer,error_type,Null pointer exceptions
+31,type-error,error_type,Type mismatch errors
+32,syntax-error,error_type,Syntax errors
+33,race-condition,error_type,Race condition bugs
+34,deadlock,error_type,Deadlock situations
+35,timeout,error_type,Timeout errors
+36,overflow,error_type,Buffer or integer overflow
+37,async,concept,Asynchronous programming
+38,concurrency,concept,Concurrent execution
+39,caching,concept,Caching strategies
+40,authentication,concept,Authentication mechanisms
+41,orm,concept,Object-relational mapping
+42,api-design,concept,API design patterns
+43,testing,concept,Software testing
+44,performance,concept,Performance optimization
+45,security,concept,Security best practices
+46,database,concept,Database management
+47,state-management,concept,Application state management
+48,hooks,concept,React hooks or similar patterns
+49,middleware,concept,Middleware architecture
+50,websocket,concept,WebSocket real-time communication
+51,rest-api,concept,REST API design
+52,graphql,concept,GraphQL query language
+53,docker,concept,Docker containerization
+54,kubernetes,concept,Kubernetes orchestration
+55,ci-cd,concept,Continuous Integration/Deployment
+56,microservices,concept,Microservices architecture

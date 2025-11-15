@@ -1,0 +1,388 @@
+resource_id,user_id,url,title,source_platform,content_summary,visit_count,first_visited_at,last_visited_at,usefulness_score
+1,1,https://github.com/microsoft/django/issues/7167,Feature: type mismatch in API Handler,github,"Without leg rest.
+Here discover leave choice country themselves she. Special information she. Drive attack order.",6,2025-07-02 09:14:32,2025-07-31 09:14:32,2.5
+2,6,https://github.com/django/core/issues/9683,Feature: type mismatch in API Handler,github,Including every news option same. Personal interview many win. Skill five indicate chance heavy senior.,5,2025-06-25 09:14:32,2025-07-22 09:14:32,2.4
+3,10,https://stackoverflow.com/questions/4195751/them-could-seven-right,How to handle async errors in Django,stackoverflow,Look thank four whatever address. While bring yourself look drug. Region however dream focus executive letter possible final.,10,2024-12-14 09:14:32,2024-12-20 09:14:32,2.6
+4,4,https://medium.com/@jonathan77/leave-run-goal-cause-national,Understanding Async Patterns in Node.js,medium,"Wrong whatever model stuff avoid stand any. Include successful discuss.
+Despite lay art. Tree process administration mother in admit reveal movie.",19,2024-11-14 09:14:32,2024-11-20 09:14:32,2.8
+5,5,https://python.org/docs/current/tutorial.html,Python Documentation: Best Practices,docs,Spring environment however health image. During recently feel stock ball yard practice. Behavior here need.,7,2025-04-20 09:14:32,2025-05-14 09:14:32,2.1
+6,12,https://stackoverflow.com/questions/9953163/test-thought-little-another,How to implement caching in Django,stackoverflow,"Tonight nor allow up fire. Onto sell require huge baby.
+Drive strong home to forward sense cause. May window approach join.",6,2025-07-03 09:14:32,2025-07-06 09:14:32,2.7
+7,9,https://github.com/google/typescript/issues/7073,Performance: type mismatch in Authentication,github,Something require bank child Republican. Science first blood accept. Know seven bill beautiful issue. Never impact ago government behavior our foot.,18,2024-11-15 09:14:32,2024-11-23 09:14:32,3.1
+8,9,https://postgresql.org/docs/current/reference.html,Postgresql Documentation: Best Practices,docs,Race nearly well left. Just fact realize standard somebody. Pull cause field education child institution.,6,2025-03-12 09:14:32,2025-03-27 09:14:32,2.2
+9,3,https://medium.com/@hartdeanna/position-whom-former-someone-black,Understanding ORM Optimization in Django,medium,"Develop section newspaper reach determine. Hospital sign open matter general agency.
+Indeed which break wait center. Gas six miss give best.",48,2025-07-16 09:14:32,2025-07-30 09:14:32,4.5
+10,1,https://medium.com/@vfoster/pass-culture-or-home-relate,Understanding ORM Optimization in Python,medium,Sell speak artist big the. Hand culture box provide.,11,2025-08-11 09:14:32,2025-08-31 09:14:32,2.5
+11,6,https://github.com/facebook/react/issues/1104,Documentation: slow rendering in API Handler,github,Memory industry case himself. Main Mr try us. Never majority cell fire.,11,2025-07-23 09:14:32,2025-08-06 09:14:32,2.1
+12,12,https://stackoverflow.com/questions/9106820/manager-member-of-environmental,How to debug memory leaks in React,stackoverflow,Majority officer environmental increase later plant. Idea seek reason theory.,8,2024-11-15 09:14:32,2024-12-01 09:14:32,2.3
+13,2,https://stackoverflow.com/questions/5809835/radio-any-between-six,How to handle async errors in PostgreSQL,stackoverflow,"Buy tax kid. Yeah into yet. Think few themselves theory.
+Economy head tough close how figure. Investment before believe degree back.",14,2024-12-31 09:14:32,2025-01-29 09:14:32,3.1
+14,4,https://github.com/microsoft/typescript/issues/9625,Performance: race condition in Database Layer,github,Physical character in rather team. To cause but role. White fire cause everybody base network.,5,2025-06-30 09:14:32,2025-07-18 09:14:32,2.7
+15,1,https://react.org/docs/v1/api.html,React Documentation: API Reference,docs,"Democratic two we huge expert.
+Interest I policy Mrs check base. Memory data space movie. Only shake power poor financial join.
+Each under break partner. Finally score scientist budget.",6,2024-12-05 09:14:32,2024-12-25 09:14:32,2.4
+16,9,https://medium.com/@rogersruben/model-enjoy-window-physical-many,Understanding React Hooks in Node.js,medium,"Area teacher cold church significant thus. Direction meeting analysis television. Animal hair turn condition whether.
+Sort research pretty different eat trouble floor.",9,2024-12-25 09:14:32,2025-01-22 09:14:32,2.3
+17,9,https://react.org/docs/v5/tutorial.html,React Documentation: Configuration,docs,Lead hard factor six science drug happy. Young simply run national somebody character usually.,27,2025-03-30 09:14:32,2025-04-27 09:14:32,3.5
+18,10,https://github.com/facebook/typescript/issues/6152,Bug: slow rendering in API Handler,github,"Billion morning draw man art. Republican behavior TV today. Including time learn security oil measure PM.
+Option artist production candidate. End fire song red save. Laugh do want carry show board.",29,2025-08-22 09:14:32,2025-08-29 09:14:32,3.2
+19,12,https://nodejs.org/docs/current/reference.html,Nodejs Documentation: Advanced Usage,docs,American structure foreign before eat green message quality. Star community weight take new.,14,2024-12-17 09:14:32,2025-01-02 09:14:32,2.9
+20,8,https://python.org/docs/v2/api.html,Python Documentation: Configuration,docs,"Amount leave collection off. Many him interview government traditional every. Third alone people early far include nearly.
+Evidence case current this. Eat yes myself affect him require look.",50,2025-09-27 09:14:32,2025-10-05 09:14:32,4.3
+21,2,https://github.com/google/core/issues/7150,Documentation: slow rendering in UI Component,github,Offer work home very yard. Compare or south recently.,13,2025-03-13 09:14:32,2025-04-04 09:14:32,2.4
+22,1,https://stackoverflow.com/questions/3587398/food-against-only-true,How to debug memory leaks in TypeScript,stackoverflow,Team whether health walk how big few. Wish run join police.,12,2024-12-31 09:14:32,2025-01-02 09:14:32,2.4
+23,9,https://nodejs.org/docs/current/reference.html,Nodejs Documentation: API Reference,docs,"Seat draw word collection those become. Land enter economic attack either blue.
+History run why.",5,2025-08-19 09:14:32,2025-09-05 09:14:32,2.2
+24,9,https://github.com/facebook/react/issues/6798,Bug: race condition in UI Component,github,Full world throw relate. Wall close threat church big day. Important never understand music produce.,6,2024-12-20 09:14:32,2025-01-12 09:14:32,2.2
+25,2,https://react.org/docs/current/guide.html,React Documentation: Advanced Usage,docs,Wife operation network subject stand industry. Reach view of dog federal house take. Maybe too song.,5,2025-07-17 09:14:32,2025-07-21 09:14:32,2.1
+26,11,https://stackoverflow.com/questions/5629871/site-both-change-note,How to debug memory leaks in Django,stackoverflow,"Understand none big experience. They there enough pressure occur list common. Century participant really although threat former. Any little environmental head full.
+Exactly man receive better than. Feel season similar fly.",13,2025-03-13 09:14:32,2025-04-05 09:14:32,2.5
+27,6,https://github.com/nodejs/typescript/issues/8501,Bug: slow rendering in Database Layer,github,Truth relate ever. Measure play buy air head order concern. Only glass clear thus see read expect.,36,2025-09-20 09:14:32,2025-10-02 09:14:32,3.6
+28,12,https://github.com/django/core/issues/3230,Performance: race condition in API Handler,github,"Education source figure whom poor.
+Surface learn design few minute perhaps. Bill memory production successful hear positive participant fear. Loss from everybody foot.",6,2025-04-19 09:14:32,2025-04-28 09:14:32,2.8
+29,2,https://medium.com/@jenniferrios/young-else-industry-home-along,Understanding State Management in PostgreSQL,medium,Gas require rather point little. Medical suddenly subject theory Congress best. Scientist rise next tree.,6,2025-05-27 09:14:32,2025-06-07 09:14:32,2.1
+30,12,https://react.org/docs/current/guide.html,React Documentation: API Reference,docs,"Yeah garden would throughout. Century television Congress ball forward would finish.
+Later decide similar. Share majority shake because pass plant idea.",33,2025-04-05 09:14:32,2025-05-01 09:14:32,3.4
+31,7,https://stackoverflow.com/questions/7864256/minute-model-its-rather,How to debug memory leaks in Python,stackoverflow,"You majority seek close trade speech. Direction road capital.
+Mean but represent society heart policy side perhaps.",6,2025-06-11 09:14:32,2025-07-06 09:14:32,2.5
+32,1,https://stackoverflow.com/questions/9040224/store-bit-responsibility-brother,How to debug memory leaks in PostgreSQL,stackoverflow,"Marriage participant sing story. Group important civil nature travel.
+Doctor actually become book off management. Single avoid rich toward. Lead with enough anyone spend.
+Growth quality international break surface.",27,2025-06-09 09:14:32,2025-06-26 09:14:32,3.7
+33,4,https://medium.com/@patricia94/there-behavior-spring-consumer-husband,Understanding ORM Optimization in TypeScript,medium,"Structure ready long instead though. Both receive around wall. Billion treat lot notice.
+Particularly single particularly television. Low maintain thought key. Energy fire relate question.",9,2025-01-01 09:14:32,2025-01-25 09:14:32,2.9
+34,6,https://medium.com/@markramirez/medical-nearly-her-stage-bad,Understanding ORM Optimization in Python,medium,Should outside respond guy laugh best probably. Game stop who. Natural hear blood to manage.,8,2025-10-04 09:14:32,2025-10-16 09:14:32,2.5
+35,4,https://nodejs.org/docs/v1/reference.html,Nodejs Documentation: Best Practices,docs,"Stuff lot meet TV concern official. Billion price paper focus. Industry participant realize eat huge garden.
+Source catch owner though mention successful natural. Republican very plan cut person fact.",12,2025-10-25 09:14:32,2025-11-12 09:14:32,2.7
+36,12,https://github.com/django/express/issues/9199,Feature: race condition in Authentication,github,"Seek claim expert economy style. Daughter must grow laugh pattern.
+Score night down six sometimes. Realize another high indicate small. Whole approach season data than team.",5,2024-12-20 09:14:32,2024-12-23 09:14:32,2.2
+37,12,https://stackoverflow.com/questions/6232651/once-effort-form-report,How to implement caching in Node.js,stackoverflow,Child follow anything. Past product make of group six fish detail.,8,2024-12-26 09:14:32,2025-01-09 09:14:32,2.2
+38,6,https://medium.com/@wilsonmichael/drive-politics-truth-during-always,Understanding ORM Optimization in React,medium,"Trouble war history music executive treat. Method meet main fast prepare fly. Way cold what Mrs.
+Assume prove similar ten interest billion Mrs reflect.",5,2024-11-18 09:14:32,2024-12-15 09:14:32,2.5
+39,3,https://github.com/rust-lang/typescript/issues/4996,Feature: slow rendering in Database Layer,github,"Movement political peace series. Animal summer group me face rate paper example. High state air choose detail section.
+Whether century quality trial some. Whatever action themselves center among of. Mr water fight security tough gas.",7,2025-06-02 09:14:32,2025-06-22 09:14:32,2.3
+40,4,https://stackoverflow.com/questions/8250013/ground-provide-doctor-expect,How to debug memory leaks in React,stackoverflow,Fish late pattern figure once. Note space when collection finish size Republican.,7,2024-11-09 09:14:32,2024-12-01 09:14:32,2.3
+41,5,https://stackoverflow.com/questions/2049645/road-throughout-support-place,How to handle async errors in Go,stackoverflow,If operation trade necessary myself your line simple. Hotel through operation tax card may. However maybe production summer. Range serious cell city not not the certainly.,5,2025-06-29 09:14:32,2025-07-02 09:14:32,2.1
+42,6,https://medium.com/@blacknicholas/trade-might-good-test-main,Understanding State Management in PostgreSQL,medium,According think key discover method exactly change church. Response brother discover specific result loss long decision. Positive improve during campaign.,9,2025-09-03 09:14:32,2025-09-06 09:14:32,2.6
+43,6,https://stackoverflow.com/questions/8681625/process-enough-right-garden,How to optimize queries in Go,stackoverflow,Opportunity discover history board dark teacher mean information. Painting concern top outside. Me brother lot candidate owner still to.,26,2025-10-17 09:14:32,2025-10-21 09:14:32,3.4
+44,3,https://stackoverflow.com/questions/6123426/season-according-mission-mind,How to handle async errors in Python,stackoverflow,"Reach firm gun choice prepare. End movie north partner yeah. Sense including six lot have never.
+Officer similar huge catch tell. Security land record class.",10,2025-06-09 09:14:32,2025-06-28 09:14:32,2.5
+45,1,https://github.com/django/typescript/issues/8973,Feature: slow rendering in UI Component,github,"Good house only military say attention. Near risk next on.
+Difficult white lawyer identify above. Imagine blood authority family. Sort what then spend.",5,2025-06-25 09:14:32,2025-07-14 09:14:32,2.1
+46,7,https://python.org/docs/current/guide.html,Python Documentation: Advanced Usage,docs,"Eat behavior purpose start away.
+Finish despite off consumer second us couple. Dog drug enter director strong.",7,2025-10-23 09:14:32,2025-11-07 09:14:32,2.3
+47,1,https://medium.com/@stephenmartinez/million-firm-across-purpose-here,Understanding State Management in Node.js,medium,Gun technology cost enjoy especially when. Hand material decision red head take.,5,2025-02-27 09:14:32,2025-03-08 09:14:32,2.0
+48,9,https://stackoverflow.com/questions/5843084/instead-care-throw-piece,How to optimize queries in Go,stackoverflow,Size feel no nothing huge real. Democratic effect stuff benefit. Employee growth newspaper special general in.,8,2025-07-18 09:14:32,2025-08-04 09:14:32,2.7
+49,12,https://stackoverflow.com/questions/2916069/finish-president-report-painting,How to implement caching in Go,stackoverflow,"Thought sit voice security minute. Including contain age road product wait red. Decision however believe view.
+Approach side model you billion peace base. Finally easy exist phone capital stuff. Along ground trip.",15,2024-11-28 09:14:32,2024-12-22 09:14:32,2.6
+50,2,https://github.com/microsoft/express/issues/2677,Feature: race condition in Authentication,github,"Spring summer gas light across two water.
+Across involve fall discuss account. Country think join economic resource position. Determine bad personal might son party.",6,2024-12-21 09:14:32,2025-01-04 09:14:32,2.7
+51,7,https://medium.com/@blopez/charge-wide-against-win-example,Understanding Async Patterns in Python,medium,"Road do character management game find. Your less social form such weight argue.
+Myself consider time economic. Stock business should eat side kitchen. Current same behind.
+Home which view city rock seat near. Education police cup thought.",10,2025-09-15 09:14:32,2025-10-05 09:14:32,2.9
+52,10,https://stackoverflow.com/questions/3335975/become-citizen-before-peace,How to optimize queries in Go,stackoverflow,Art popular red social. Maintain first next popular. South just cover ready group care. Magazine join far.,14,2025-08-06 09:14:32,2025-08-14 09:14:32,2.8
+53,12,https://github.com/google/django/issues/5740,Performance: memory leak in API Handler,github,Couple raise she child executive important. Book model at strong candidate them. Blood court all politics home.,26,2025-10-08 09:14:32,2025-10-12 09:14:32,3.8
+54,7,https://react.org/docs/v3/guide.html,React Documentation: Advanced Usage,docs,"Whether best rise mother country. Prevent now way next newspaper second short.
+Purpose reflect interview bit society nearly. Front citizen your kitchen good firm yard. Suddenly include plan step food drive.",5,2025-09-24 09:14:32,2025-10-07 09:14:32,2.4
+55,8,https://github.com/rust-lang/react/issues/7600,Performance: race condition in UI Component,github,"Try memory number occur behind.
+Choose enter threat economic eight feel. Hundred truth safe rich society common stay. Standard believe politics also space high sister.",6,2024-12-24 09:14:32,2025-01-16 09:14:32,2.0
+56,9,https://github.com/rust-lang/django/issues/2037,Documentation: slow rendering in UI Component,github,Bed it skill challenge from live seat. Human be maybe similar candidate care nice. House number night young modern drug entire.,7,2025-04-01 09:14:32,2025-04-11 09:14:32,2.2
+57,8,https://github.com/nodejs/express/issues/6631,Bug: memory leak in Authentication,github,"Science drug per challenge. Add really born late age.
+Deep national seek nature performance yeah reason. Heavy town money.
+Art customer recent even. Pressure across home even system process ten.",5,2025-01-26 09:14:32,2025-02-09 09:14:32,2.7
+58,11,https://stackoverflow.com/questions/8177281/between-firm-term-mother,How to optimize queries in TypeScript,stackoverflow,May leader unit again easy. Figure majority season adult range green few.,20,2025-03-27 09:14:32,2025-03-29 09:14:32,2.8
+59,4,https://stackoverflow.com/questions/2382787/personal-dinner-drive-check,How to implement caching in TypeScript,stackoverflow,Forget my deal catch must son television finally. Travel involve training show prevent north citizen.,5,2025-10-31 09:14:32,2025-11-24 09:14:32,2.4
+60,1,https://github.com/facebook/react/issues/1017,Feature: type mismatch in Authentication,github,Blood continue several partner environment. Partner others discuss ago bag sister care.,9,2025-06-22 09:14:32,2025-06-22 09:14:32,2.5
+61,2,https://medium.com/@phillip99/movie-political-region-although-body,Understanding React Hooks in Go,medium,"There early Mrs. Newspaper might piece. Couple keep this.
+Coach family try ready tough less position. Reveal both single visit.",11,2025-03-04 09:14:32,2025-03-16 09:14:32,2.5
+62,3,https://medium.com/@christopher68/partner-civil-nearly-analysis-color,Understanding React Hooks in React,medium,The television class certain shoulder anything final. Eye Congress together whether about she activity. Talk myself accept third down open little.,6,2025-05-21 09:14:32,2025-06-14 09:14:32,2.1
+63,7,https://github.com/rust-lang/typescript/issues/2120,Bug: slow rendering in UI Component,github,Occur no whom see growth along shoulder follow. Star serve successful assume likely business. Forget including decide decade around. Role pick would low read value worry.,11,2025-01-23 09:14:32,2025-02-21 09:14:32,2.7
+64,3,https://github.com/django/typescript/issues/2420,Bug: slow rendering in Authentication,github,"Brother let someone. Son yourself increase free night.
+Political real effort. Film media food accept.
+How notice whether story create street. Trouble something population loss physical throughout Mr. Leg sport until argue minute north.",11,2025-06-14 09:14:32,2025-06-24 09:14:32,2.4
+65,5,https://stackoverflow.com/questions/2413458/market-down-later-week,How to optimize queries in PostgreSQL,stackoverflow,"Few born size sing tree kitchen agent. Toward child future low them financial force.
+Quality car right least require mission about. Reach organization beautiful.",13,2025-10-10 09:14:32,2025-11-07 09:14:32,2.8
+66,7,https://stackoverflow.com/questions/9548370/church-boy-when-nice,How to optimize queries in TypeScript,stackoverflow,"My near even wall sound. Each author party full kitchen candidate likely.
+Himself beat hot relate.",6,2025-03-09 09:14:32,2025-03-24 09:14:32,2.0
+67,10,https://stackoverflow.com/questions/9381604/leave-color-should-page,How to handle async errors in PostgreSQL,stackoverflow,Bill stage someone for power society mouth. Opportunity draw during city lot at.,50,2025-01-13 09:14:32,2025-01-25 09:14:32,4.9
+68,7,https://github.com/nodejs/typescript/issues/8717,Bug: memory leak in Authentication,github,Our rate others star. Management produce bed stage thought tough. Serious produce laugh.,6,2024-12-07 09:14:32,2025-01-06 09:14:32,2.0
+69,2,https://github.com/rust-lang/core/issues/7806,Documentation: type mismatch in Authentication,github,Particularly member summer. Artist too whose a nice. Body executive all it opportunity personal. Image itself deep community cause new.,8,2024-12-19 09:14:32,2024-12-28 09:14:32,2.1
+70,4,https://github.com/microsoft/typescript/issues/9788,Performance: type mismatch in Authentication,github,"Marriage room Republican especially unit office almost.
+Low happy oil which bag room money.",11,2025-03-09 09:14:32,2025-03-10 09:14:32,2.8
+71,1,https://stackoverflow.com/questions/8289425/light-safe-inside-whether,How to handle async errors in Node.js,stackoverflow,Cold reason our fight size. Article list college appear wrong.,6,2025-02-04 09:14:32,2025-02-07 09:14:32,2.5
+72,6,https://medium.com/@ptownsend/produce-rise-cold-official-success,Understanding React Hooks in Python,medium,"Sense break cold human feeling.
+Here relationship listen certain that. Eye something high. Which raise American truth PM what.",38,2025-03-19 09:14:32,2025-03-24 09:14:32,3.9
+73,5,https://stackoverflow.com/questions/5509119/in-moment-rate-goal,How to handle async errors in Go,stackoverflow,Cover agency begin voice prevent. Wear point remain build task.,6,2025-08-02 09:14:32,2025-08-04 09:14:32,2.2
+74,6,https://medium.com/@qschwartz/show-food-class-available-since,Understanding React Hooks in Node.js,medium,"Four art western enough key man. Particular condition man century shoulder. Pass blood kid else alone.
+Road since affect marriage present a also. Entire record toward off middle vote.",8,2025-08-24 09:14:32,2025-08-29 09:14:32,2.0
+75,1,https://stackoverflow.com/questions/2726457/set-face-data-never,How to handle async errors in Python,stackoverflow,"Federal hope blood read main. Just country along agent you draw home society. Matter who speech whom administration.
+Front return if deep. Learn question them chance often under already. Major affect trade peace.",5,2024-11-13 09:14:32,2024-11-20 09:14:32,2.6
+76,2,https://github.com/django/typescript/issues/3932,Bug: type mismatch in API Handler,github,"Market sometimes determine source. Front structure scene I building range.
+Focus who degree animal. Friend building center indeed. Network just understand American beyond suggest.",6,2025-04-19 09:14:32,2025-04-27 09:14:32,2.7
+77,5,https://github.com/facebook/core/issues/1862,Feature: slow rendering in Authentication,github,Brother morning believe gun seven. Medical less phone decade apply both chance.,5,2025-03-31 09:14:32,2025-04-24 09:14:32,2.2
+78,8,https://stackoverflow.com/questions/8662929/for-single-for-better,How to handle async errors in Django,stackoverflow,Heart determine likely machine three. Democratic participant concern health. Rest place wish dark camera realize arrive.,6,2025-09-21 09:14:32,2025-09-28 09:14:32,2.6
+79,7,https://stackoverflow.com/questions/9277218/wife-talk-beat-tax,How to optimize queries in TypeScript,stackoverflow,"Option student evidence role save. Easy its develop until watch. Together individual analysis yard safe mean international.
+Special recent better manager bar send really. Wear car fast positive before look. Class learn now on with.",12,2024-11-10 09:14:32,2024-12-09 09:14:32,2.3
+80,4,https://stackoverflow.com/questions/6812025/per-friend-usually-method,How to handle async errors in Django,stackoverflow,Book half people. Hand possible relate night similar catch. Draw box long voice oil where.,12,2025-04-13 09:14:32,2025-04-16 09:14:32,2.5
+81,12,https://github.com/microsoft/express/issues/9061,Bug: slow rendering in Database Layer,github,Later happy pull really within. Could this beautiful hospital. Eye what body every.,5,2025-07-31 09:14:32,2025-08-13 09:14:32,2.0
+82,10,https://nodejs.org/docs/current/api.html,Nodejs Documentation: API Reference,docs,"In garden position for order recent. Knowledge fight car smile commercial employee machine. Show another good lay coach.
+Expect win stuff realize project child draw. Year off kid.",5,2024-12-15 09:14:32,2025-01-02 09:14:32,2.6
+83,12,https://stackoverflow.com/questions/3192921/leader-floor-above-school,How to optimize queries in Django,stackoverflow,"Positive far time wide senior yes. Son rock two full. Rule too cause nearly.
+Husband subject land. For part crime money.",17,2025-05-27 09:14:32,2025-06-18 09:14:32,3.3
+84,3,https://stackoverflow.com/questions/8596016/respond-into-history-activity,How to implement caching in Python,stackoverflow,Final knowledge night democratic thousand score. Sound eye south wife interest to. Structure our century field.,33,2025-09-02 09:14:32,2025-09-05 09:14:32,3.3
+85,5,https://stackoverflow.com/questions/8542478/nice-less-agree-able,How to debug memory leaks in Django,stackoverflow,"What strong line president throughout. Conference trade population agreement share manage.
+Seat ok not than physical live reason build. Run adult employee ok certainly leave really.",5,2025-02-21 09:14:32,2025-03-07 09:14:32,2.1
+86,9,https://github.com/facebook/react/issues/3582,Performance: memory leak in API Handler,github,Rate read benefit oil statement. Carry example single.,5,2025-05-08 09:14:32,2025-05-20 09:14:32,2.5
+87,12,https://stackoverflow.com/questions/6013715/kind-would-mission-wide,How to implement caching in Go,stackoverflow,"Agreement sport develop task central. Film decide wonder interesting several.
+Affect machine issue cultural. Soldier message arrive.",5,2025-06-26 09:14:32,2025-07-13 09:14:32,2.2
+88,7,https://github.com/facebook/express/issues/2669,Feature: memory leak in Authentication,github,Strong wonder interest method. Both world buy book career several.,16,2025-01-12 09:14:32,2025-01-18 09:14:32,3.3
+89,3,https://stackoverflow.com/questions/2409947/sort-voice-happen-actually,How to implement caching in Go,stackoverflow,How mission put budget. Husband opportunity big understand within ask. Full organization wrong but study.,5,2025-10-03 09:14:32,2025-10-17 09:14:32,2.0
+90,12,https://stackoverflow.com/questions/6562484/attention-question-will-him,How to handle async errors in React,stackoverflow,Few perhaps set produce. Should society dark product make energy gas. National weight all involve trip himself fire.,5,2025-06-16 09:14:32,2025-07-12 09:14:32,2.7
+91,5,https://stackoverflow.com/questions/1494630/pay-good-within-fly,How to debug memory leaks in TypeScript,stackoverflow,"And student give score agree through game best.
+In argue each doctor fine be. Than boy college Mrs. Leave tell nothing.",5,2025-02-10 09:14:32,2025-02-18 09:14:32,2.0
+92,7,https://github.com/microsoft/react/issues/5026,Performance: type mismatch in UI Component,github,"Degree enter father of source person when. Behind front attack song little decide somebody prepare.
+Sound item music customer I person law. Congress affect reflect television officer defense while.",7,2025-05-22 09:14:32,2025-05-26 09:14:32,2.0
+93,8,https://stackoverflow.com/questions/9821696/expert-civil-rather-door,How to optimize queries in TypeScript,stackoverflow,"Change agree someone financial. Nice job positive already city carry election.
+Compare system white magazine after teacher base. Fear as western to public though however style.",14,2025-11-07 09:14:32,2025-11-18 09:14:32,3.2
+94,5,https://github.com/django/django/issues/9231,Performance: type mismatch in Database Layer,github,Very design blood degree ever. Effect operation make hear we first. Little east everyone six certain little.,5,2024-11-22 09:14:32,2024-12-20 09:14:32,2.3
+95,11,https://stackoverflow.com/questions/8913550/kind-account-whether-until,How to implement caching in Go,stackoverflow,"Bed state dog decision three. Place these short image almost term.
+Say unit four institution truth beyond civil. Media goal own spend scene. Receive seven political contain kitchen political able.",50,2024-12-28 09:14:32,2025-01-04 09:14:32,5.0
+96,3,https://stackoverflow.com/questions/9953825/son-cup-increase-consider,How to handle async errors in Go,stackoverflow,Difference way type positive phone trade wind. Energy system anyone peace outside. Become happy water bring.,8,2025-05-24 09:14:32,2025-06-04 09:14:32,2.9
+97,3,https://stackoverflow.com/questions/6335227/wish-dog-late-eat,How to implement caching in PostgreSQL,stackoverflow,Oil employee mean. There car fish most center bring. Without material wind.,11,2025-08-24 09:14:32,2025-09-11 09:14:32,2.4
+98,9,https://github.com/microsoft/express/issues/9882,Performance: slow rendering in UI Component,github,Seek state none production. On will moment number indicate.,5,2025-02-27 09:14:32,2025-02-27 09:14:32,2.0
+99,3,https://github.com/google/core/issues/4300,Feature: race condition in API Handler,github,"Ball store process. Pick especially price forget analysis performance laugh.
+Deep any poor follow. Season natural own begin. Concern whole tend become system.",5,2025-11-02 09:14:32,2025-12-01 09:14:32,2.0
+100,6,https://medium.com/@william77/those-live-none-institution-series,Understanding ORM Optimization in React,medium,Control piece behavior message wind put positive require. Money positive base life bad soon feel. Range feel eat into.,11,2025-09-03 09:14:32,2025-09-06 09:14:32,2.7
+101,3,https://stackoverflow.com/questions/3289279/region-finish-right-serious,How to optimize queries in TypeScript,stackoverflow,Space game truth special decision back word else. Its adult house actually. Least if price season rise field spend.,14,2025-10-05 09:14:32,2025-10-15 09:14:32,3.2
+102,3,https://medium.com/@joannewallace/machine-after-last-drug-far,Understanding ORM Optimization in Python,medium,"Free bill summer. Woman support say other never fact. Hundred message right very toward test discussion.
+Affect office network environmental possible threat bring. Voice get recently again explain court gas discussion.",15,2025-10-25 09:14:32,2025-11-03 09:14:32,2.6
+103,11,https://stackoverflow.com/questions/1030163/perform-executive-see-project,How to debug memory leaks in Go,stackoverflow,"Current paper beyond indeed. Field decide another adult thing ground city.
+Southern front box. Building difference election future great. Show news to.",5,2025-09-16 09:14:32,2025-09-23 09:14:32,2.4
+104,12,https://github.com/django/typescript/issues/6425,Bug: slow rendering in Database Layer,github,Standard but dark wide shoulder according. Game measure be head senior guess professor. Send morning skin case.,5,2024-12-22 09:14:32,2025-01-17 09:14:32,2.6
+105,5,https://medium.com/@rachelbrown/place-require-produce-mind-fast,Understanding ORM Optimization in Node.js,medium,Republican stock bank artist. Live land hard moment.,6,2024-12-11 09:14:32,2024-12-22 09:14:32,2.0
+106,7,https://medium.com/@millsdavid/figure-hear-family-agreement-central,Understanding React Hooks in React,medium,Any thus threat democratic standard major. Natural attack and loss. Not too sit little result. Car catch PM seven project chance road become.,7,2025-01-31 09:14:32,2025-02-28 09:14:32,2.3
+107,2,https://github.com/django/django/issues/9946,Documentation: memory leak in UI Component,github,"Stop stuff often be move. I and technology age join increase.
+High before woman my experience consumer. Child weight question arrive. Consider require fear better central throw.",10,2025-01-29 09:14:32,2025-02-12 09:14:32,2.7
+108,3,https://medium.com/@bschultz/especially-white-push-east-never,Understanding React Hooks in Django,medium,Nothing land suffer matter situation. Health world site Mr.,6,2024-12-14 09:14:32,2024-12-24 09:14:32,2.8
+109,10,https://react.org/docs/current/api.html,React Documentation: Configuration,docs,"Rise your there decision. Whatever five radio garden end sell laugh.
+Game least outside administration reality position. Participant above act.
+New recent major hotel ball theory. Much throughout staff knowledge.",11,2025-10-07 09:14:32,2025-10-12 09:14:32,2.5
+110,11,https://react.org/docs/v3/guide.html,React Documentation: Best Practices,docs,Sea serve quite remember course.,11,2025-08-10 09:14:32,2025-08-18 09:14:32,2.8
+111,6,https://stackoverflow.com/questions/4985398/thing-rock-ever-summer,How to handle async errors in React,stackoverflow,"Pass quite third ability interview pull practice.
+Such imagine business million many military. This different everyone. Mother first hot free they space.",8,2025-01-24 09:14:32,2025-01-25 09:14:32,2.7
+112,5,https://stackoverflow.com/questions/2470159/phone-free-economy-blue,How to implement caching in Go,stackoverflow,"Strategy start mind door authority outside. Shake personal often beat art almost.
+Site artist sort area. Phone assume quality nice far high benefit sell. Ten skin perhaps law less.",5,2025-02-02 09:14:32,2025-02-22 09:14:32,2.0
+113,9,https://nodejs.org/docs/current/reference.html,Nodejs Documentation: Advanced Usage,docs,Those simply challenge final garden hard account only. Arm medical strong teach.,7,2024-12-23 09:14:32,2025-01-12 09:14:32,2.5
+114,4,https://stackoverflow.com/questions/7224691/defense-lose-shoulder-spring,How to debug memory leaks in Django,stackoverflow,Hundred step according act group. Boy fact create one she analysis ahead. Exist despite energy company suggest.,7,2025-07-03 09:14:32,2025-07-11 09:14:32,2.1
+115,1,https://postgresql.org/docs/v1/api.html,Postgresql Documentation: Configuration,docs,"Drive special produce wait with young think. Budget third capital couple.
+Reason fish involve player TV several. Country movement smile foreign apply somebody their surface. Though decide bank likely professional ask meet seem.",7,2025-03-03 09:14:32,2025-03-20 09:14:32,2.6
+116,9,https://postgresql.org/docs/current/tutorial.html,Postgresql Documentation: Best Practices,docs,"Care base know goal. American mention from later it happen marriage event. Conference doctor population.
+Family maybe national back. Unit better author although customer. Push economic seat shoulder suddenly.",6,2025-11-07 09:14:32,2025-11-08 09:14:32,2.2
+117,7,https://github.com/nodejs/core/issues/3415,Bug: type mismatch in API Handler,github,"Dinner rich decide do only need. Reveal left social fine could show recently.
+Last next hear officer campaign wall. Matter probably great.",50,2025-01-10 09:14:32,2025-01-11 09:14:32,4.8
+118,7,https://stackoverflow.com/questions/8304686/part-term-woman-daughter,How to optimize queries in Go,stackoverflow,Move could board notice. Police fight commercial push concern step owner. Cost attorney white.,16,2024-12-11 09:14:32,2024-12-13 09:14:32,2.6
+119,2,https://github.com/nodejs/django/issues/5525,Documentation: memory leak in UI Component,github,Industry sea home tough deal that finally. City offer financial data respond learn cut.,7,2025-09-04 09:14:32,2025-09-22 09:14:32,2.0
+120,8,https://postgresql.org/docs/current/reference.html,Postgresql Documentation: Configuration,docs,Statement sure indeed conference pay it his probably. Believe recognize analysis those citizen think Mrs. Recently reveal describe management.,6,2025-08-26 09:14:32,2025-09-14 09:14:32,2.5
+121,4,https://stackoverflow.com/questions/5620682/force-security-machine-attention,How to debug memory leaks in Python,stackoverflow,"Require just likely evidence claim. Parent concern buy. Collection provide action event key concern.
+Democratic recent student specific political respond to.",5,2025-04-25 09:14:32,2025-05-17 09:14:32,2.6
+122,8,https://stackoverflow.com/questions/8972838/professional-right-analysis-mention,How to implement caching in Django,stackoverflow,In should matter wrong Republican. Commercial where outside wonder recent question win.,6,2025-04-15 09:14:32,2025-04-23 09:14:32,2.6
+123,12,https://python.org/docs/current/guide.html,Python Documentation: Best Practices,docs,"Onto write discussion pattern to final scene. People art hear father charge.
+Draw rise write. School forget everything poor set minute.",50,2025-04-20 09:14:32,2025-04-28 09:14:32,4.4
+124,3,https://github.com/rust-lang/react/issues/4079,Documentation: slow rendering in UI Component,github,"West appear yeah voice. Begin or story use. Medical international level clearly culture.
+Paper field office whose. Even sit bag win huge. Likely institution participant item.",12,2024-12-05 09:14:32,2024-12-21 09:14:32,3.0
+125,4,https://stackoverflow.com/questions/9502613/paper-author-carry-light,How to debug memory leaks in Python,stackoverflow,"Above technology room hear identify. Wait wife health majority political open.
+Yeah buy usually. Create job effort tree. Meeting major read recent prepare unit.
+Local TV guess religious agreement. End lay race effect.",20,2025-02-13 09:14:32,2025-03-13 09:14:32,2.5
+126,2,https://react.org/docs/v1/reference.html,React Documentation: Best Practices,docs,See us huge final would. Ability attorney recent modern pressure run color.,6,2025-05-29 09:14:32,2025-06-18 09:14:32,2.3
+127,9,https://medium.com/@hillmatthew/one-long-pull-beyond-article,Understanding Async Patterns in Django,medium,"Smile among decision social heart mind while entire.
+Series page from radio gas firm dream. Professor her arm green form beyond. That I structure understand agent but most.",9,2025-07-07 09:14:32,2025-07-25 09:14:32,2.1
+128,10,https://stackoverflow.com/questions/3743303/parent-hundred-partner-bank,How to implement caching in TypeScript,stackoverflow,"Black year ahead upon. Total short detail election live today.
+Two plant man somebody. The use short over popular help.",6,2025-01-29 09:14:32,2025-02-25 09:14:32,2.2
+129,7,https://medium.com/@lauren28/professional-opportunity-blood-across-system,Understanding Async Patterns in Go,medium,"Staff father despite quite. Own certainly program soon. Out final wrong.
+You religious long stock manager. Arrive special check respond summer various.",10,2025-03-24 09:14:32,2025-04-13 09:14:32,2.7
+130,12,https://github.com/rust-lang/react/issues/8767,Feature: slow rendering in Authentication,github,Wrong serious hospital month executive recent crime. Hour capital sell oil source sure report. Pressure officer kind lot today decide source.,6,2025-04-12 09:14:32,2025-05-04 09:14:32,2.6
+131,10,https://github.com/django/express/issues/6713,Documentation: race condition in API Handler,github,"Green listen war bring. Practice order wide phone identify alone drive.
+Read west present heart reality. Sing ten practice every. Happen build bar majority protect meeting.",6,2025-09-22 09:14:32,2025-10-04 09:14:32,2.3
+132,5,https://stackoverflow.com/questions/9581776/its-number-between-as,How to implement caching in PostgreSQL,stackoverflow,If red hour stage. Major million once research so buy send. Congress out conference never.,6,2024-12-09 09:14:32,2024-12-19 09:14:32,2.0
+133,11,https://github.com/google/django/issues/5895,Feature: slow rendering in API Handler,github,Knowledge officer reason mission worry goal Mrs. Reach production and already center.,14,2025-09-10 09:14:32,2025-09-22 09:14:32,3.0
+134,7,https://stackoverflow.com/questions/3347627/vote-century-data-picture,How to handle async errors in TypeScript,stackoverflow,"Research nor positive memory clearly. First skin her who.
+Establish mother range image. Policy guy four event than difficult.
+Help why her bit.
+Money then open southern. More red tend necessary.",50,2025-06-09 09:14:32,2025-06-21 09:14:32,4.3
+135,11,https://medium.com/@rshaw/weight-minute-responsibility-under-director,Understanding Async Patterns in Django,medium,"Image fine bed bag role. Close arm sea never.
+While interest meet. Look middle your thousand. If pattern treat second.",10,2025-07-08 09:14:32,2025-08-06 09:14:32,2.6
+136,5,https://stackoverflow.com/questions/6036433/health-both-trial-economic,How to optimize queries in Go,stackoverflow,Face low enter able. Notice design fight value poor stay along leg. Summer arm accept leave fear blue glass reveal.,5,2025-01-11 09:14:32,2025-02-03 09:14:32,2.0
+137,5,https://medium.com/@nicole31/couple-American-house-season-too,Understanding Async Patterns in TypeScript,medium,Way where work budget major. Son research foot share think maybe type.,10,2025-03-01 09:14:32,2025-03-24 09:14:32,2.2
+138,10,https://github.com/google/django/issues/5269,Performance: type mismatch in Authentication,github,Yes easy star cup relationship. Red maybe Congress yeah.,5,2025-08-31 09:14:32,2025-09-30 09:14:32,2.4
+139,4,https://stackoverflow.com/questions/4263903/floor-answer-American-appear,How to handle async errors in Go,stackoverflow,"Experience exactly paper issue edge. Hair fight best add necessary technology former. Sea open painting draw every once.
+Candidate sea build only. Cover knowledge better walk people.",8,2025-01-23 09:14:32,2025-01-27 09:14:32,2.3
+140,6,https://stackoverflow.com/questions/8676774/use-mean-against-out,How to optimize queries in Django,stackoverflow,Animal not some really scientist. Manager mouth message avoid just meeting.,13,2025-09-26 09:14:32,2025-10-01 09:14:32,2.6
+141,7,https://github.com/facebook/express/issues/5481,Feature: slow rendering in API Handler,github,"Establish so politics eat. Movement ability girl painting hard.
+Enough card together far world personal action. Despite whole computer will Mr without.",13,2025-01-12 09:14:32,2025-01-31 09:14:32,2.9
+142,6,https://github.com/django/express/issues/8821,Documentation: memory leak in Authentication,github,"Financial those stage. Could century interview lawyer population I right case.
+Between himself body add store various car show.
+Voice outside society act. My stand system be.",5,2024-11-14 09:14:32,2024-12-12 09:14:32,2.1
+143,6,https://medium.com/@othomas/agency-interview-challenge-pretty-difficult,Understanding Async Patterns in React,medium,Man yard different what. Ground past brother type turn. Page concern most.,9,2025-10-28 09:14:32,2025-11-25 09:14:32,2.2
+144,5,https://stackoverflow.com/questions/2723158/long-attack-official-where,How to debug memory leaks in PostgreSQL,stackoverflow,"Bed yes consider his. Management loss win own PM catch.
+Industry market move mouth start his. Resource money since specific despite beautiful gun data.
+Next whatever TV arrive glass support.",6,2024-11-30 09:14:32,2024-12-09 09:14:32,2.0
+145,7,https://github.com/nodejs/core/issues/9587,Performance: type mismatch in API Handler,github,"Receive interesting approach. Production available study that. Chair center each.
+Store indicate she like cell month we.",50,2025-02-11 09:14:32,2025-02-16 09:14:32,4.5
+146,11,https://stackoverflow.com/questions/4763487/maybe-remember-interest-church,How to optimize queries in Python,stackoverflow,Help week sea hundred argue hot state. Painting baby realize local present if herself.,9,2025-05-13 09:14:32,2025-06-04 09:14:32,2.1
+147,11,https://medium.com/@allenfrancisco/blood-deep-action-travel-could,Understanding State Management in TypeScript,medium,"Drive be now. Nor so animal.
+Want across ground executive. Matter fire hospital green can push. Imagine scientist big space change onto.",13,2025-09-07 09:14:32,2025-09-08 09:14:32,2.8
+148,8,https://stackoverflow.com/questions/1331211/growth-task-issue-three,How to handle async errors in TypeScript,stackoverflow,Election list eight theory practice cell buy. Major guy expert important people quite kid.,7,2025-08-14 09:14:32,2025-08-22 09:14:32,2.2
+149,5,https://medium.com/@qsawyer/behavior-letter-politics-too-let,Understanding Async Patterns in TypeScript,medium,Rule true two should. Husband ask garden page defense.,6,2025-10-12 09:14:32,2025-10-28 09:14:32,2.5
+150,5,https://github.com/rust-lang/typescript/issues/7862,Bug: memory leak in Database Layer,github,Edge compare center event bank. The modern prove else store begin top. White father cup walk loss movement.,13,2025-09-14 09:14:32,2025-09-20 09:14:32,2.6
+151,8,https://react.org/docs/current/tutorial.html,React Documentation: Configuration,docs,Character learn challenge. Box wide image minute about late. Plant police official already.,5,2025-02-21 09:14:32,2025-03-15 09:14:32,2.2
+152,3,https://stackoverflow.com/questions/1045936/material-yourself-increase-goal,How to handle async errors in TypeScript,stackoverflow,Mission share box compare into computer. Class job expect process quite plant reduce visit. Yet south billion power.,24,2025-10-15 09:14:32,2025-10-30 09:14:32,3.5
+153,2,https://postgresql.org/docs/v1/reference.html,Postgresql Documentation: Best Practices,docs,"Above training allow ago so. Star outside friend where year drop wind. Pattern hotel appear use investment.
+Idea fish citizen discuss. Mean place six successful. True study city follow behavior agent activity show.",50,2025-07-02 09:14:32,2025-07-03 09:14:32,4.3
+154,3,https://python.org/docs/current/reference.html,Python Documentation: Configuration,docs,Create subject risk southern her. Process ever various physical point.,12,2024-11-30 09:14:32,2024-11-30 09:14:32,2.2
+155,12,https://medium.com/@donnawelch/talk-bring-garden-get-yet,Understanding Async Patterns in Django,medium,Above miss effort business paper movie military. Describe half together ahead. Detail road vote environment. Current begin remain present level speak job.,22,2025-03-24 09:14:32,2025-04-21 09:14:32,3.6
+156,8,https://stackoverflow.com/questions/6749933/current-good-today-standard,How to optimize queries in React,stackoverflow,"Threat when education important. Step population whole good air conference follow so. Early Democrat he certain fire act.
+Degree nothing focus discussion at exist.",7,2025-05-23 09:14:32,2025-06-14 09:14:32,2.3
+157,7,https://medium.com/@mooneyrobert/buy-commercial-force-him-office,Understanding Async Patterns in React,medium,Popular task write. Expect success idea time truth although population.,11,2025-01-27 09:14:32,2025-01-30 09:14:32,2.1
+158,12,https://nodejs.org/docs/current/tutorial.html,Nodejs Documentation: Best Practices,docs,"Visit bill difference stay catch year. Difficult because right speech staff Mr.
+Employee size book.
+Enough reach social here. Understand on build floor.",13,2025-10-23 09:14:32,2025-11-20 09:14:32,2.8
+159,1,https://react.org/docs/current/tutorial.html,React Documentation: API Reference,docs,Next their process same day back. Art actually democratic stand could bit decade.,7,2025-10-08 09:14:32,2025-10-18 09:14:32,2.0
+160,7,https://medium.com/@blopez/live-most-goal-brother-nearly,Understanding Async Patterns in TypeScript,medium,"Deep however issue free kid have. Possible rule institution. Country computer every parent million.
+Position where detail. Time offer draw.",8,2025-09-19 09:14:32,2025-09-22 09:14:32,2.6
+161,9,https://medium.com/@sstevenson/draw-fire-attorney-cost-tonight,Understanding Async Patterns in Node.js,medium,"Program into again. Thing color set act goal.
+A their line and admit quite fact direction. Cold chair behind fight save laugh same. Either main hair add good report through.",10,2025-01-22 09:14:32,2025-02-17 09:14:32,2.6
+162,5,https://postgresql.org/docs/v2/tutorial.html,Postgresql Documentation: Advanced Usage,docs,Individual yes finally American mind gas partner item. Note society get body across until chair. Model face newspaper class.,5,2025-03-10 09:14:32,2025-03-20 09:14:32,2.2
+163,2,https://stackoverflow.com/questions/4736395/size-maybe-when-night,How to debug memory leaks in Node.js,stackoverflow,Central run it truth fact. List great speech.,5,2025-08-27 09:14:32,2025-09-10 09:14:32,2.2
+164,2,https://nodejs.org/docs/current/tutorial.html,Nodejs Documentation: API Reference,docs,Catch kind finish various. Life into inside improve agree next. Because cell trade skill oil health.,7,2025-08-15 09:14:32,2025-08-15 09:14:32,2.0
+165,1,https://medium.com/@kevincollins/writer-according-machine-reach-boy,Understanding ORM Optimization in PostgreSQL,medium,"Page building best daughter.
+Strategy kitchen argue. Feel low contain dog. Employee partner keep probably but chair against.
+Color score national live face. Where manage property hospital.",5,2025-04-30 09:14:32,2025-05-11 09:14:32,2.4
+166,6,https://nodejs.org/docs/current/tutorial.html,Nodejs Documentation: Configuration,docs,Decision total modern message company charge pretty. Fund resource skill everything several field hour. Heavy line probably office until simple moment.,5,2025-02-28 09:14:32,2025-02-28 09:14:32,2.5
+167,12,https://stackoverflow.com/questions/5898671/food-discuss-sign-true,How to implement caching in TypeScript,stackoverflow,Tonight community throughout sense. Two artist economy also seek kid.,5,2025-01-17 09:14:32,2025-02-12 09:14:32,2.0
+168,8,https://medium.com/@wardricky/national-author-continue-role-treat,Understanding State Management in React,medium,Couple debate still may ground tonight table. Keep personal them notice. Site fear brother discover.,9,2025-05-27 09:14:32,2025-06-02 09:14:32,2.1
+169,8,https://react.org/docs/current/api.html,React Documentation: Advanced Usage,docs,"Daughter stage form serious. Dog authority way toward.
+Wonder wear our partner ball necessary.",28,2025-09-04 09:14:32,2025-09-07 09:14:32,3.7
+170,9,https://github.com/nodejs/core/issues/3205,Documentation: memory leak in Authentication,github,Team radio scene need appear she receive involve. Near break brother past tough goal. Job around discussion open dinner section.,31,2025-07-12 09:14:32,2025-08-10 09:14:32,3.9
+171,11,https://medium.com/@scottturner/happen-necessary-than-each-throw,Understanding Async Patterns in TypeScript,medium,"Me approach too relationship perform evidence data. Success minute figure need. Head staff center within.
+Well again student establish open feel whole. Everything particular manager television. Know difference here process mouth produce.",5,2024-12-30 09:14:32,2025-01-11 09:14:32,2.6
+172,3,https://github.com/google/core/issues/7302,Documentation: slow rendering in Database Layer,github,"Serious game stop its into. Southern network weight usually. Teach visit less occur nothing. Employee whether level yeah draw traditional exactly.
+Your side fast number. Past gun process.",45,2025-06-26 09:14:32,2025-07-21 09:14:32,4.7
+173,4,https://stackoverflow.com/questions/9594877/company-that-pretty-discussion,How to implement caching in Go,stackoverflow,"Range team oil among.
+Weight yeah window administration. Music and doctor board medical both.
+Daughter now stop race author. Then central force small friend impact.",18,2025-08-17 09:14:32,2025-09-06 09:14:32,3.1
+174,9,https://stackoverflow.com/questions/5875114/several-power-western-when,How to implement caching in TypeScript,stackoverflow,Me off nature individual run summer month. Parent process minute.,50,2025-02-06 09:14:32,2025-02-22 09:14:32,4.7
+175,11,https://medium.com/@ohartman/notice-step-by-Mrs-simply,Understanding ORM Optimization in TypeScript,medium,Method more hold institution. I news Republican budget.,12,2025-09-01 09:14:32,2025-09-19 09:14:32,2.7
+176,3,https://medium.com/@shirley13/father-game-nor-today-oil,Understanding ORM Optimization in Go,medium,"Follow five condition century sport. Issue everything they fire girl. Budget event keep those.
+Writer send under project cell. Need meet collection out always.",15,2024-11-19 09:14:32,2024-12-01 09:14:32,2.8
+177,1,https://stackoverflow.com/questions/1949670/why-sound-season-develop,How to optimize queries in Django,stackoverflow,Church friend law save public available. Throughout although beyond relate miss couple.,50,2025-01-20 09:14:32,2025-02-15 09:14:32,4.7
+178,11,https://medium.com/@henrycheryl/report-although-read-party-piece,Understanding ORM Optimization in Python,medium,"Machine prevent conference feel discussion factor. Make picture our myself far despite while.
+Wide foot production break let five. Girl huge campaign think.",5,2024-12-29 09:14:32,2025-01-17 09:14:32,2.6
+179,12,https://medium.com/@parkerrobert/occur-coach-deal-personal-way,Understanding Async Patterns in TypeScript,medium,Form painting after reveal sort bed relate treatment. As any decision movement world study how. Face claim hear including need. Vote already after wait bill.,6,2025-10-29 09:14:32,2025-11-07 09:14:32,2.3
+180,9,https://medium.com/@mlee/teacher-size-interesting-sea-few,Understanding State Management in Node.js,medium,"Between wide office heavy involve. Whom night low traditional mouth. Him year road week several.
+Difference window however discussion have none poor. Century picture base night debate walk.",40,2025-04-16 09:14:32,2025-05-16 09:14:32,4.5
+181,11,https://stackoverflow.com/questions/5216804/major-matter-where-dog,How to optimize queries in PostgreSQL,stackoverflow,"Method teach yeah bank bit recognize heart. Class security coach. Thank box those manager phone modern.
+Industry across brother yet result they even. Past he practice center model daughter.",16,2025-11-02 09:14:32,2025-11-24 09:14:32,3.2
+182,3,https://stackoverflow.com/questions/4296204/organization-at-player-third,How to optimize queries in Django,stackoverflow,Add cover exist treatment international role happen short. Night political dark or bill. Evidence enjoy bill someone onto.,5,2025-02-10 09:14:32,2025-03-12 09:14:32,2.4
+183,10,https://medium.com/@kevin13/nice-help-history-listen-find,Understanding React Hooks in Node.js,medium,Most third success western watch street. Style night majority smile. Newspaper itself give agent.,7,2025-01-12 09:14:32,2025-01-17 09:14:32,2.4
+184,11,https://python.org/docs/current/guide.html,Python Documentation: API Reference,docs,Positive politics huge. Ever arm occur air responsibility.,29,2025-09-23 09:14:32,2025-10-12 09:14:32,3.5
+185,9,https://stackoverflow.com/questions/7007679/name-work-create-pass,How to handle async errors in Go,stackoverflow,"Student summer first remember town only.
+Add professor indicate property article cover seven. Rock base kitchen every. Read important play success wait.",8,2025-07-31 09:14:32,2025-08-02 09:14:32,2.9
+186,5,https://stackoverflow.com/questions/7768215/college-action-point-least,How to handle async errors in Django,stackoverflow,Study politics top course sense. Financial here expert everything.,20,2025-04-25 09:14:32,2025-05-06 09:14:32,3.2
+187,11,https://stackoverflow.com/questions/9900294/position-radio-eye-garden,How to debug memory leaks in PostgreSQL,stackoverflow,Instead friend possible beyond.,5,2025-03-10 09:14:32,2025-04-07 09:14:32,2.1
+188,9,https://github.com/nodejs/typescript/issues/1653,Performance: type mismatch in Authentication,github,"International especially officer or clearly coach. Though whole wall cup win.
+Professional small approach bed. Soon learn close a.
+Third feeling ball door data. Right child new simply.",6,2024-11-19 09:14:32,2024-12-18 09:14:32,2.5
+189,2,https://django.org/docs/current/tutorial.html,Django Documentation: Advanced Usage,docs,Particular seem trip. Catch could deep itself fund. International expect hit start.,6,2025-04-20 09:14:32,2025-05-06 09:14:32,2.5
+190,2,https://react.org/docs/current/api.html,React Documentation: API Reference,docs,Get run pretty identify. Claim can medical. Activity president prove institution approach interesting score.,10,2025-10-23 09:14:32,2025-11-05 09:14:32,2.8
+191,2,https://stackoverflow.com/questions/8302077/character-front-various-opportunity,How to handle async errors in TypeScript,stackoverflow,"Spend road lawyer any example business majority. Anyone out hard international push short.
+Environment fall indicate land fear along born.",5,2024-11-26 09:14:32,2024-11-28 09:14:32,2.5
+192,7,https://stackoverflow.com/questions/5226314/ever-will-ready-each,How to handle async errors in PostgreSQL,stackoverflow,Learn baby head chair with point think. Mention rise front PM few husband. Wear either present third.,25,2025-06-25 09:14:32,2025-07-15 09:14:32,3.2
+193,11,https://github.com/facebook/express/issues/2938,Bug: memory leak in Authentication,github,Above debate site price ever. Out wish fish determine adult foot as.,6,2025-04-04 09:14:32,2025-04-29 09:14:32,2.3
+194,3,https://stackoverflow.com/questions/2451316/hope-idea-produce-number,How to implement caching in Go,stackoverflow,"Main world bar security morning fight seem later. Ahead person coach goal it yet age.
+Season writer heart Mrs her we but. Design yeah number condition city since.",6,2024-11-22 09:14:32,2024-12-07 09:14:32,2.6
+195,2,https://github.com/microsoft/express/issues/9941,Performance: slow rendering in Database Layer,github,"Oil individual industry country ahead difference. People your outside rule watch foot economic notice.
+Weight age over smile. Need tell sure claim hard themselves. Line require current car.",40,2025-08-18 09:14:32,2025-08-22 09:14:32,3.5
+196,7,https://stackoverflow.com/questions/7611593/training-each-reveal-attorney,How to handle async errors in Django,stackoverflow,Term yet television audience indicate employee.,12,2025-05-02 09:14:32,2025-05-08 09:14:32,3.0
+197,1,https://postgresql.org/docs/v2/guide.html,Postgresql Documentation: Configuration,docs,Send born college include fund tree somebody decide. Form really leader remember.,5,2025-08-24 09:14:32,2025-09-20 09:14:32,2.4
+198,6,https://postgresql.org/docs/current/api.html,Postgresql Documentation: Configuration,docs,Guy fact war citizen plant little key. Child source campaign parent teacher. Pm agreement deep field once.,6,2025-08-31 09:14:32,2025-09-15 09:14:32,2.0
+199,10,https://stackoverflow.com/questions/4934808/possible-that-lot-low,How to handle async errors in Django,stackoverflow,Protect ask different. Difference everything sing smile practice. Material notice police activity second standard.,23,2025-06-25 09:14:32,2025-07-05 09:14:32,3.0
+200,1,https://medium.com/@mthompson/entire-everyone-sea-safe-true,Understanding Async Patterns in PostgreSQL,medium,"Few debate during seven local better think. Five plant cultural.
+Bar culture my Democrat maintain notice. Involve toward result kind politics open play sense.
+Senior over manage computer medical.",6,2025-06-14 09:14:32,2025-06-19 09:14:32,2.1
+201,8,https://stackoverflow.com/questions/4716584/point-Mrs-consumer-single,How to debug memory leaks in Django,stackoverflow,Film figure short line range. Decision public food court how commercial citizen production.,5,2025-07-10 09:14:32,2025-07-24 09:14:32,2.5
+202,3,https://stackoverflow.com/questions/6124966/why-government-south-window,How to debug memory leaks in PostgreSQL,stackoverflow,"Stand dark product. Far health focus so for.
+Something pay key ever avoid. For look return like. Sit hope where.",5,2025-03-30 09:14:32,2025-04-26 09:14:32,2.4
+203,10,https://react.org/docs/v1/api.html,React Documentation: API Reference,docs,"Federal customer because early of several end most. Ready cell show that recognize.
+Toward knowledge this contain life leave. Current will else page usually cell. Interview south something story art writer.",9,2025-08-30 09:14:32,2025-09-11 09:14:32,2.8
+204,4,https://stackoverflow.com/questions/1614990/year-sell-short-issue,How to implement caching in PostgreSQL,stackoverflow,"Later thing school practice authority possible fund. Sit science way threat husband family perhaps.
+Across follow character. Once should mother president customer. Understand throw resource officer country challenge final.",7,2025-05-13 09:14:32,2025-05-25 09:14:32,2.6
+205,1,https://postgresql.org/docs/current/reference.html,Postgresql Documentation: Best Practices,docs,"Cut clear yard do turn. Agree there want but way agent.
+Any just cup side opportunity by. Medical official might clear.
+Wait scientist group yet. Course world son growth effort born.",7,2025-05-12 09:14:32,2025-05-28 09:14:32,2.0
+206,10,https://medium.com/@beanjoshua/positive-follow-cell-eat-north,Understanding Async Patterns in Go,medium,"Choose reason several article sort term produce. Pay statement information company million character.
+These body class marriage fill personal. Perform agreement ago agreement like.",5,2025-08-23 09:14:32,2025-09-22 09:14:32,2.0
+207,2,https://medium.com/@mtaylor/speak-a-live-tonight-either,Understanding Async Patterns in TypeScript,medium,Half party respond local see system cultural. Method south central process sea. Executive past economic economy role feeling.,32,2025-07-14 09:14:32,2025-07-21 09:14:32,3.1
+208,8,https://stackoverflow.com/questions/4926181/however-activity-lose-tax,How to handle async errors in TypeScript,stackoverflow,Thank wife if yeah law enjoy key seat. Under front throughout effort southern maintain nature.,8,2025-05-24 09:14:32,2025-06-08 09:14:32,2.7
+209,9,https://python.org/docs/current/reference.html,Python Documentation: API Reference,docs,"Their film job worker. Whom will consumer star.
+Center quite simply cup seat. Over charge teacher modern song guy discover. Coach city quite play teacher difficult us.",9,2025-03-21 09:14:32,2025-04-08 09:14:32,2.2
+210,8,https://github.com/django/express/issues/6985,Bug: race condition in UI Component,github,Decade safe order at sense. Century state share southern. Hospital city industry option eat.,8,2025-05-02 09:14:32,2025-05-17 09:14:32,2.3
+211,3,https://python.org/docs/current/guide.html,Python Documentation: Advanced Usage,docs,Sea lawyer audience without treat game evening. High through both.,5,2025-03-30 09:14:32,2025-04-05 09:14:32,2.3
+212,11,https://stackoverflow.com/questions/7077092/point-tend-exactly-right,How to handle async errors in TypeScript,stackoverflow,Policy forget project economy ground. Big south drug.,7,2025-01-04 09:14:32,2025-01-19 09:14:32,2.2
+213,9,https://github.com/microsoft/core/issues/3641,Documentation: memory leak in API Handler,github,Wind eat land answer leader yard. Shoulder civil next tell possible. Send sit common matter become goal.,5,2025-01-14 09:14:32,2025-02-03 09:14:32,2.3
+214,10,https://stackoverflow.com/questions/3463987/training-record-night-series,How to handle async errors in Python,stackoverflow,Huge receive cup bed. Trip production system certainly future government card history. Party wife food different step.,27,2025-06-02 09:14:32,2025-06-21 09:14:32,3.4
+215,10,https://github.com/rust-lang/django/issues/2404,Feature: type mismatch in UI Component,github,News your court control million hundred. Thousand without section religious word sound enjoy. Hair understand doctor music baby really.,5,2025-09-10 09:14:32,2025-09-14 09:14:32,2.6
+216,7,https://react.org/docs/current/reference.html,React Documentation: Best Practices,docs,Well commercial nice next. Time live relationship as. Assume rest now water road require.,27,2024-12-12 09:14:32,2024-12-19 09:14:32,3.4
+217,3,https://stackoverflow.com/questions/2821504/simple-audience-as-including,How to handle async errors in Python,stackoverflow,"Eat own serve conference Congress. Rock forward behind idea red rate source.
+Catch gas benefit great religious these matter. Employee customer goal positive. Fund sell model after.",18,2025-06-09 09:14:32,2025-07-05 09:14:32,2.9
+218,11,https://github.com/microsoft/express/issues/1639,Bug: memory leak in UI Component,github,Chance standard air although Mr when wait. Various blue raise operation cold.,23,2024-11-07 09:14:32,2024-12-05 09:14:32,3.2
+219,12,https://github.com/nodejs/express/issues/7068,Bug: type mismatch in API Handler,github,"Group true TV. Better mind professional fly month offer mother hour. Poor executive career shake fall phone identify.
+Make make focus machine. Fill yeah side side recognize month. Could become throughout.",14,2025-09-04 09:14:32,2025-09-29 09:14:32,2.6
+220,9,https://postgresql.org/docs/v2/reference.html,Postgresql Documentation: Advanced Usage,docs,"Authority data deal policy administration two. Too break fact toward process.
+Would step head study. Choose out perform. Think institution now tell phone.",24,2025-09-09 09:14:32,2025-10-07 09:14:32,2.8
+221,3,https://github.com/microsoft/react/issues/1116,Bug: memory leak in UI Component,github,Production development point boy. At Mr cold science western resource reason. Movie expect now board budget.,10,2025-05-11 09:14:32,2025-05-14 09:14:32,2.3
+222,3,https://github.com/nodejs/django/issues/5281,Documentation: race condition in Database Layer,github,He scene kind shoulder production mean window shoulder. Analysis add check teacher economy compare. Customer popular hospital check factor as contain.,12,2025-08-19 09:14:32,2025-09-03 09:14:32,2.5
+223,11,https://stackoverflow.com/questions/9116148/result-right-focus-although,How to implement caching in Django,stackoverflow,"Accept about around hold note. Several along nation after station.
+Population executive pattern last security raise partner. Woman PM look together lawyer these. Certain PM company whose yourself.",6,2025-01-16 09:14:32,2025-02-12 09:14:32,2.5
+224,9,https://stackoverflow.com/questions/4854922/third-leave-laugh-weight,How to debug memory leaks in Go,stackoverflow,Full program card morning early Republican. Create them process peace too nature shake. Hear fill hotel like myself laugh.,5,2025-04-29 09:14:32,2025-05-24 09:14:32,2.3
+225,5,https://github.com/rust-lang/react/issues/3633,Documentation: memory leak in Authentication,github,Particular shake most physical along best. Beat across television apply. Finish top data character.,7,2024-12-22 09:14:32,2024-12-24 09:14:32,2.5
+226,5,https://stackoverflow.com/questions/2342843/budget-travel-important-no,How to handle async errors in TypeScript,stackoverflow,Record example summer economic box war training. Sense career herself here. Short only write gun. Once consider thus wife water note.,29,2025-10-08 09:14:32,2025-10-24 09:14:32,3.4
+227,11,https://medium.com/@howellbrittany/yard-half-education-message-word,Understanding React Hooks in Go,medium,"Five cold power red enjoy you front.
+Process four all the unit action off. Herself toward here along public.",9,2025-02-18 09:14:32,2025-03-17 09:14:32,2.4
+228,5,https://postgresql.org/docs/v1/guide.html,Postgresql Documentation: Best Practices,docs,South blood avoid health.,6,2025-01-26 09:14:32,2025-01-28 09:14:32,2.5
+229,12,https://medium.com/@padillajames/second-ball-begin-week-about,Understanding ORM Optimization in TypeScript,medium,"Anyone bag fly more live. Remain manager relationship light rule.
+Kind medical bag wind. Century my win record reflect. Could support series direction. Play or own media experience interview.",7,2024-11-14 09:14:32,2024-12-07 09:14:32,2.1
+230,10,https://stackoverflow.com/questions/2512732/open-trouble-guess-race,How to implement caching in TypeScript,stackoverflow,"Energy style late score lose matter shake. National seat direction color real important.
+Type suffer win less tonight laugh. Scene history wear them. High that change hand its stage.
+Or contain believe hospital. Even cup market citizen.",25,2025-03-28 09:14:32,2025-04-04 09:14:32,3.1
+231,5,https://nodejs.org/docs/current/api.html,Nodejs Documentation: Configuration,docs,Whatever place full. Range investment business can example. Southern ten hard wife as language.,7,2024-12-14 09:14:32,2024-12-30 09:14:32,2.0
+232,8,https://stackoverflow.com/questions/2963085/finish-thing-his-chance,How to implement caching in PostgreSQL,stackoverflow,"More leg too water. At hope cover show Republican. Summer arrive east plan force station.
+Certainly evening floor world painting movie station. Whatever our build safe save. Model mean eat heavy red.
+End century agent prepare several.",6,2025-05-19 09:14:32,2025-06-06 09:14:32,2.2
+233,2,https://medium.com/@marcussmith/appear-force-local-center-story,Understanding ORM Optimization in Go,medium,"Agent its food concern party set poor. Not notice third argue response car. Until cause bill clear.
+Senior win full include. Manage nation modern politics.",10,2024-11-21 09:14:32,2024-12-06 09:14:32,2.9
+234,9,https://stackoverflow.com/questions/7420191/case-floor-hold-plant,How to optimize queries in TypeScript,stackoverflow,Member face age. Nearly always operation decade old according. Ok happy together clearly.,14,2025-05-06 09:14:32,2025-05-22 09:14:32,2.6
+235,9,https://stackoverflow.com/questions/5418274/hotel-practice-later-knowledge,How to optimize queries in Django,stackoverflow,Water home force worker own close man. Others some project visit back blue a.,7,2025-05-01 09:14:32,2025-05-03 09:14:32,2.6
+236,12,https://nodejs.org/docs/current/guide.html,Nodejs Documentation: Configuration,docs,"Position wife score health evidence. Father alone build. Enjoy us thought song.
+Try season radio air. Company both right lay though reason event.",35,2025-02-12 09:14:32,2025-02-27 09:14:32,3.9
+237,3,https://stackoverflow.com/questions/5061034/store-include-win-officer,How to implement caching in Python,stackoverflow,"Where then report rest.
+Agency evening the dog language. Yet analysis none.",5,2025-09-19 09:14:32,2025-09-30 09:14:32,2.0
+238,1,https://medium.com/@alowe/growth-it-own-those-four,Understanding React Hooks in React,medium,Late much quite threat gas truth work. Out music story city. Cause staff day really bank industry born.,9,2025-08-11 09:14:32,2025-09-10 09:14:32,2.7
+239,7,https://django.org/docs/current/tutorial.html,Django Documentation: Configuration,docs,"Strong time could a. Son manager trouble reason fill sense field. My benefit sport age all.
+Control simply author effect week. War product action our gas heart.",5,2025-07-26 09:14:32,2025-08-03 09:14:32,2.5
+240,7,https://stackoverflow.com/questions/3151610/read-per-go-will,How to handle async errors in PostgreSQL,stackoverflow,"Here while service. Little myself bar right. Two lawyer see drop worker alone finally since.
+Party believe raise order push. Very know maybe. Ever north soon movie right education brother.",7,2025-07-22 09:14:32,2025-08-02 09:14:32,2.4
+241,10,https://react.org/docs/current/api.html,React Documentation: Advanced Usage,docs,Director know red treatment big cause science. None just happen recognize after modern really play. Industry almost job reduce. Assume enjoy we group.,10,2025-02-22 09:14:32,2025-03-06 09:14:32,2.0
+242,6,https://stackoverflow.com/questions/7066680/reduce-action-art-small,How to implement caching in Python,stackoverflow,"Program one across they case TV team. Country listen long between hold.
+Teach audience project tax certainly set local. Not east send style. Visit still image sell amount fly. Agree public us hospital paper term.",6,2025-09-16 09:14:32,2025-09-26 09:14:32,2.1
+243,10,https://stackoverflow.com/questions/8112581/relate-since-significant-always,How to optimize queries in Node.js,stackoverflow,Exactly practice would game student painting. Talk like maintain serious style.,6,2025-06-25 09:14:32,2025-06-30 09:14:32,2.2
+244,3,https://stackoverflow.com/questions/4834713/soon-read-couple-rather,How to handle async errors in TypeScript,stackoverflow,Fly something ok community right then police. Our plant front thought special. Early machine establish nothing Mr chair.,14,2025-05-21 09:14:32,2025-05-27 09:14:32,2.8
+245,9,https://react.org/docs/current/api.html,React Documentation: Best Practices,docs,"Set yes American audience blue movement. Six understand rather daughter.
+Act front person everyone. Drive determine page seem until government. Charge network first detail south.",7,2025-09-25 09:14:32,2025-10-11 09:14:32,2.8
+246,12,https://medium.com/@ogriffin/beyond-bank-Republican-kind-school,Understanding State Management in Django,medium,Seek age share day pull job themselves garden. Material past study. Day certain back student raise collection identify design.,8,2025-05-29 09:14:32,2025-06-01 09:14:32,2.5
+247,9,https://stackoverflow.com/questions/4614941/employee-citizen-despite-one,How to implement caching in Node.js,stackoverflow,Appear pressure six west walk compare nature walk. Door space crime Republican.,7,2025-05-10 09:14:32,2025-05-21 09:14:32,2.2
+248,5,https://github.com/google/django/issues/1324,Documentation: memory leak in Database Layer,github,"Spend may thus hour cold light suffer. Technology strong off evidence early.
+Require class paper amount. Career expert more majority senior nearly.",8,2025-08-09 09:14:32,2025-08-14 09:14:32,2.5
+249,11,https://stackoverflow.com/questions/9563838/him-federal-agency-maintain,How to debug memory leaks in Go,stackoverflow,"Itself point chair tend so.
+How central too tough education. Letter let think leg indeed anything.
+Far apply let hit. Back family start necessary American wonder.",21,2025-04-02 09:14:32,2025-04-16 09:14:32,2.9
+250,6,https://react.org/docs/current/reference.html,React Documentation: Advanced Usage,docs,"Force happy song one third serve item method. Rock not attack why usually help produce. Rule play century several cultural pattern.
+Detail analysis activity card industry create. Interview nothing wrong decision.",7,2024-12-17 09:14:32,2024-12-22 09:14:32,2.8

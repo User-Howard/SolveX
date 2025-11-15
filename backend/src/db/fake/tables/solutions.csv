@@ -1,0 +1,1997 @@
+solution_id,problem_id,parent_solution_id,code_snippet,explanation,approach_type,version_number,branch_type,improvement_description,success_rate,created_at
+1,59,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Refactored to follow Single Responsibility Principle.,algorithm,1,,,35.2,2025-01-22 01:14:32
+4,81,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Applied memoization to cache intermediate results.,library,1,,,26.1,2024-12-24 16:14:32
+6,82,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Used async patterns to avoid blocking operations.,optimization,1,,,47.9,2025-04-03 15:14:32
+8,75,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,22.1,2025-10-01 23:14:32
+11,69,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Applied memoization to cache intermediate results.,design_pattern,1,,,39.7,2025-04-08 06:14:32
+13,102,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Applied memoization to cache intermediate results.,optimization,1,,,48.8,2025-06-18 10:14:32
+14,102,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Refactored to follow Single Responsibility Principle.,design_pattern,1,,,37.9,2025-06-18 10:14:32
+17,70,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,algorithm,1,,,32.0,2025-07-06 08:14:32
+18,70,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,design_pattern,1,,,25.2,2025-07-04 12:14:32
+21,114,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,library,1,,,35.1,2025-01-06 13:14:32
+24,93,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,library,1,,,34.6,2025-07-02 01:14:32
+25,93,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Added proper error handling and edge case validation.,algorithm,1,,,43.3,2025-07-01 17:14:32
+26,93,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,design_pattern,1,,,31.0,2025-07-02 08:14:32
+29,134,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,design_pattern,1,,,20.4,2025-01-17 14:14:32
+31,116,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",This approach uses built-in language features for better performance.,design_pattern,1,,,37.5,2025-07-17 20:14:32
+34,106,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Implemented caching to reduce redundant computations.,library,1,,,34.5,2025-08-02 22:14:32
+36,43,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Added proper error handling and edge case validation.,design_pattern,1,,,40.5,2025-04-23 01:14:32
+39,48,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,optimization,1,,,47.3,2025-05-01 20:14:32
+41,6,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,library,1,,,49.9,2024-12-24 06:14:32
+42,6,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Implemented caching to reduce redundant computations.,library,1,,,36.0,2024-12-24 06:14:32
+43,6,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Added proper error handling and edge case validation.,optimization,1,,,20.9,2024-12-24 12:14:32
+46,33,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,library,1,,,34.7,2025-11-07 22:14:32
+49,61,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,design_pattern,1,,,43.3,2025-04-19 11:14:32
+50,61,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Applied memoization to cache intermediate results.,algorithm,1,,,23.3,2025-04-19 01:14:32
+53,65,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Refactored to follow Single Responsibility Principle.,library,1,,,35.0,2025-02-03 11:14:32
+54,65,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Refactored to follow Single Responsibility Principle.,optimization,1,,,33.5,2025-02-03 23:14:32
+55,65,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Added proper error handling and edge case validation.,library,1,,,22.7,2025-02-04 07:14:32
+58,21,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,21.5,2024-12-01 08:14:32
+59,21,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,library,1,,,38.8,2024-11-29 22:14:32
+62,54,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Added proper error handling and edge case validation.,algorithm,1,,,24.4,2024-11-17 19:14:32
+63,54,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,37.3,2024-11-17 15:14:32
+64,54,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,library,1,,,32.5,2024-11-19 05:14:32
+67,138,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Added proper error handling and edge case validation.,optimization,1,,,45.8,2025-10-05 19:14:32
+68,138,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",This approach uses built-in language features for better performance.,algorithm,1,,,26.3,2025-10-05 22:14:32
+71,145,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,library,1,,,33.9,2025-02-09 01:14:32
+72,145,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,library,1,,,21.4,2025-02-07 10:14:32
+73,145,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,design_pattern,1,,,28.4,2025-02-08 05:14:32
+76,27,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Switched to more efficient data structure.,algorithm,1,,,43.5,2025-04-17 19:14:32
+78,13,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Refactored to follow Single Responsibility Principle.,optimization,1,,,49.5,2024-12-08 21:14:32
+79,13,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Added proper error handling and edge case validation.,algorithm,1,,,41.2,2024-12-09 03:14:32
+82,9,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Applied memoization to cache intermediate results.,design_pattern,1,,,30.2,2025-08-25 06:14:32
+84,120,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",This approach uses built-in language features for better performance.,algorithm,1,,,29.3,2025-06-09 07:14:32
+87,113,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,library,1,,,23.4,2025-05-17 20:14:32
+89,141,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,library,1,,,36.2,2025-09-17 11:14:32
+90,141,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",This approach uses built-in language features for better performance.,algorithm,1,,,23.2,2025-09-18 13:14:32
+93,71,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,library,1,,,27.0,2025-09-04 01:14:32
+94,71,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,design_pattern,1,,,31.8,2025-09-03 15:14:32
+95,71,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Implemented caching to reduce redundant computations.,design_pattern,1,,,22.0,2025-09-03 16:14:32
+98,7,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Added proper error handling and edge case validation.,library,1,,,31.5,2025-10-24 06:14:32
+100,4,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Refactored to follow Single Responsibility Principle.,design_pattern,1,,,44.7,2025-02-28 11:14:32
+101,4,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,design_pattern,1,,,23.3,2025-02-28 17:14:32
+102,4,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,algorithm,1,,,26.5,2025-02-27 19:14:32
+105,99,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,algorithm,1,,,31.1,2025-01-31 07:14:32
+108,51,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,library,1,,,49.9,2024-11-08 10:14:32
+111,68,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",This approach uses built-in language features for better performance.,optimization,1,,,32.7,2025-05-08 08:14:32
+112,68,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,design_pattern,1,,,35.1,2025-05-06 12:14:32
+115,98,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,design_pattern,1,,,34.1,2025-07-14 12:14:32
+116,98,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,design_pattern,1,,,28.7,2025-07-15 08:14:32
+117,98,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Refactored to follow Single Responsibility Principle.,algorithm,1,,,38.9,2025-07-15 04:14:32
+120,11,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,optimization,1,,,43.5,2024-12-13 21:14:32
+122,14,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Refactored to follow Single Responsibility Principle.,library,1,,,33.2,2025-08-16 22:14:32
+124,34,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,optimization,1,,,34.3,2025-08-13 05:14:32
+127,80,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Switched to more efficient data structure.,optimization,1,,,27.7,2025-06-08 05:14:32
+128,80,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Used async patterns to avoid blocking operations.,design_pattern,1,,,40.2,2025-06-08 05:14:32
+129,80,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",This approach uses built-in language features for better performance.,algorithm,1,,,36.4,2025-06-06 10:14:32
+132,20,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,algorithm,1,,,39.7,2025-01-27 06:14:32
+133,20,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,optimization,1,,,28.8,2025-01-26 03:14:32
+134,20,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,design_pattern,1,,,27.7,2025-01-25 13:14:32
+137,115,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Implemented caching to reduce redundant computations.,algorithm,1,,,41.5,2024-12-21 14:14:32
+140,84,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,optimization,1,,,26.8,2025-10-09 17:14:32
+142,50,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Refactored to follow Single Responsibility Principle.,algorithm,1,,,39.4,2025-06-15 10:14:32
+145,40,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Applied memoization to cache intermediate results.,algorithm,1,,,36.0,2024-12-15 12:14:32
+146,40,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,optimization,1,,,30.1,2024-12-15 17:14:32
+147,40,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,library,1,,,40.0,2024-12-17 09:14:32
+150,30,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Used async patterns to avoid blocking operations.,algorithm,1,,,34.9,2024-11-19 22:14:32
+152,32,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,21.9,2025-07-24 12:14:32
+155,95,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,24.3,2024-11-28 12:14:32
+156,95,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",This approach uses built-in language features for better performance.,library,1,,,38.3,2024-11-29 07:14:32
+157,95,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,38.8,2024-11-28 12:14:32
+160,37,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,39.3,2025-04-29 13:14:32
+161,37,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Applied memoization to cache intermediate results.,algorithm,1,,,38.5,2025-04-28 16:14:32
+162,37,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,optimization,1,,,25.3,2025-04-29 18:14:32
+165,57,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",This approach uses built-in language features for better performance.,optimization,1,,,37.6,2025-02-19 19:14:32
+166,57,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,design_pattern,1,,,33.6,2025-02-19 18:14:32
+169,149,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Refactored to follow Single Responsibility Principle.,library,1,,,48.6,2025-03-08 15:14:32
+170,149,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,optimization,1,,,45.9,2025-03-09 15:14:32
+173,17,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Applied memoization to cache intermediate results.,algorithm,1,,,35.9,2025-09-08 14:14:32
+176,100,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,library,1,,,43.2,2025-04-15 09:14:32
+178,117,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Implemented caching to reduce redundant computations.,design_pattern,1,,,43.6,2024-12-16 09:14:32
+180,22,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,library,1,,,41.3,2025-09-02 07:14:32
+181,22,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,library,1,,,23.4,2025-09-03 09:14:32
+184,125,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,algorithm,1,,,25.7,2025-08-25 15:14:32
+185,125,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Implemented caching to reduce redundant computations.,algorithm,1,,,28.7,2025-08-25 20:14:32
+186,125,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,library,1,,,40.9,2025-08-25 23:14:32
+189,5,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Applied memoization to cache intermediate results.,optimization,1,,,37.8,2025-10-03 05:14:32
+190,5,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,25.2,2025-10-03 16:14:32
+193,85,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,design_pattern,1,,,26.2,2025-09-09 08:14:32
+196,46,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,design_pattern,1,,,41.9,2025-01-09 06:14:32
+197,46,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,library,1,,,34.4,2025-01-09 05:14:32
+200,42,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,library,1,,,49.3,2025-07-04 17:14:32
+202,123,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,30.3,2025-07-29 21:14:32
+205,60,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Switched to more efficient data structure.,algorithm,1,,,48.0,2025-01-22 10:14:32
+207,144,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,21.3,2025-05-29 17:14:32
+210,35,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Applied memoization to cache intermediate results.,optimization,1,,,42.4,2025-08-10 02:14:32
+211,35,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",This approach uses built-in language features for better performance.,design_pattern,1,,,31.2,2025-08-09 20:14:32
+212,35,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,design_pattern,1,,,29.6,2025-08-09 20:14:32
+215,122,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,library,1,,,22.9,2025-01-08 10:14:32
+216,122,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,optimization,1,,,28.4,2025-01-09 07:14:32
+219,129,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,algorithm,1,,,41.3,2025-07-11 00:14:32
+221,18,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Switched to more efficient data structure.,algorithm,1,,,43.2,2025-06-29 22:14:32
+224,89,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,24.4,2024-11-18 08:14:32
+225,89,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Used async patterns to avoid blocking operations.,algorithm,1,,,43.4,2024-11-17 16:14:32
+228,23,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,algorithm,1,,,35.4,2025-03-09 06:14:32
+230,76,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,23.5,2025-09-10 00:14:32
+231,76,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Switched to more efficient data structure.,design_pattern,1,,,26.8,2025-09-09 13:14:32
+232,76,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Applied memoization to cache intermediate results.,design_pattern,1,,,46.8,2025-09-08 21:14:32
+235,77,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,algorithm,1,,,45.3,2024-12-04 00:14:32
+238,150,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",This approach uses built-in language features for better performance.,algorithm,1,,,48.3,2025-08-04 09:14:32
+240,73,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Applied memoization to cache intermediate results.,optimization,1,,,39.8,2025-10-16 22:14:32
+242,56,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,optimization,1,,,29.4,2025-03-17 15:14:32
+243,56,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,25.3,2025-03-17 17:14:32
+244,56,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,optimization,1,,,29.4,2025-03-16 17:14:32
+247,140,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Implemented caching to reduce redundant computations.,optimization,1,,,30.2,2024-11-13 08:14:32
+250,146,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Applied memoization to cache intermediate results.,algorithm,1,,,20.6,2025-05-28 06:14:32
+251,146,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,optimization,1,,,29.7,2025-05-27 16:14:32
+254,107,,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,library,1,,,49.9,2025-09-02 01:14:32
+256,45,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,44.7,2025-05-16 04:14:32
+259,62,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,library,1,,,33.9,2025-06-30 09:14:32
+262,109,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,43.9,2025-10-09 17:14:32
+263,109,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,library,1,,,39.4,2025-10-08 20:14:32
+264,109,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,20.9,2025-10-10 03:14:32
+267,139,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,39.9,2025-02-09 15:14:32
+269,12,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,25.3,2025-08-30 12:14:32
+270,12,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Added proper error handling and edge case validation.,algorithm,1,,,34.7,2025-08-30 06:14:32
+273,86,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,algorithm,1,,,39.2,2025-07-28 20:14:32
+275,147,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Refactored to follow Single Responsibility Principle.,optimization,1,,,45.8,2025-01-27 02:14:32
+277,47,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,44.7,2025-02-07 08:14:32
+278,47,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,algorithm,1,,,33.6,2025-02-08 03:14:32
+281,53,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Added proper error handling and edge case validation.,design_pattern,1,,,27.8,2025-03-26 22:14:32
+284,124,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Refactored to follow Single Responsibility Principle.,algorithm,1,,,48.7,2025-09-08 10:14:32
+286,111,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,library,1,,,32.9,2025-06-14 04:14:32
+289,64,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,algorithm,1,,,22.2,2025-06-23 07:14:32
+290,64,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",This approach uses built-in language features for better performance.,algorithm,1,,,47.2,2025-06-23 02:14:32
+291,64,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,library,1,,,49.3,2025-06-23 21:14:32
+294,1,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,47.1,2025-02-26 19:14:32
+297,79,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Applied memoization to cache intermediate results.,optimization,1,,,33.2,2025-01-11 17:14:32
+298,79,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Implemented caching to reduce redundant computations.,design_pattern,1,,,46.0,2025-01-10 15:14:32
+301,133,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Implemented caching to reduce redundant computations.,design_pattern,1,,,31.8,2025-04-04 19:14:32
+302,133,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Applied memoization to cache intermediate results.,optimization,1,,,33.8,2025-04-06 02:14:32
+305,66,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Switched to more efficient data structure.,algorithm,1,,,49.0,2025-07-03 11:14:32
+306,66,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Switched to more efficient data structure.,design_pattern,1,,,31.7,2025-07-05 03:14:32
+307,66,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Switched to more efficient data structure.,design_pattern,1,,,29.0,2025-07-05 05:14:32
+310,49,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Applied memoization to cache intermediate results.,library,1,,,35.4,2025-04-13 03:14:32
+313,55,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,,,22.8,2025-07-06 02:14:32
+315,126,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Applied memoization to cache intermediate results.,optimization,1,,,29.4,2025-08-21 01:14:32
+316,126,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,library,1,,,49.0,2025-08-19 21:14:32
+317,126,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,49.5,2025-08-20 13:14:32
+320,83,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,library,1,,,49.1,2025-03-03 16:14:32
+321,83,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Used async patterns to avoid blocking operations.,algorithm,1,,,27.3,2025-03-03 05:14:32
+324,19,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,optimization,1,,,45.4,2025-04-02 17:14:32
+327,31,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,library,1,,,40.9,2025-02-28 04:14:32
+328,31,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,library,1,,,30.3,2025-02-28 23:14:32
+331,88,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,optimization,1,,,34.8,2024-12-14 05:14:32
+333,91,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,library,1,,,30.1,2025-03-07 17:14:32
+334,91,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Added proper error handling and edge case validation.,design_pattern,1,,,27.7,2025-03-07 12:14:32
+335,91,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Implemented caching to reduce redundant computations.,algorithm,1,,,45.6,2025-03-08 14:14:32
+338,74,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,library,1,,,44.6,2025-06-23 14:14:32
+339,74,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Applied memoization to cache intermediate results.,design_pattern,1,,,27.4,2025-06-23 04:14:32
+340,74,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Switched to more efficient data structure.,design_pattern,1,,,28.0,2025-06-24 02:14:32
+343,105,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,optimization,1,,,49.5,2025-09-08 13:14:32
+344,105,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,algorithm,1,,,39.8,2025-09-10 02:14:32
+347,112,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Added proper error handling and edge case validation.,optimization,1,,,21.1,2024-11-24 08:14:32
+348,112,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,49.8,2024-11-22 15:14:32
+349,112,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,algorithm,1,,,42.7,2024-11-22 11:14:32
+352,63,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,design_pattern,1,,,49.5,2025-05-21 05:14:32
+355,118,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,design_pattern,1,,,26.4,2025-04-13 05:14:32
+358,28,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Added proper error handling and edge case validation.,algorithm,1,,,24.7,2025-09-20 00:14:32
+359,28,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,23.6,2025-09-19 19:14:32
+362,131,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,algorithm,1,,,36.4,2025-02-04 12:14:32
+363,131,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,optimization,1,,,37.0,2025-02-04 16:14:32
+366,39,,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,20.7,2025-05-16 03:14:32
+367,39,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",This approach uses built-in language features for better performance.,library,1,,,48.7,2025-05-15 16:14:32
+368,39,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,algorithm,1,,,39.7,2025-05-15 03:14:32
+371,15,,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,36.3,2025-05-25 21:14:32
+372,15,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Switched to more efficient data structure.,library,1,,,24.6,2025-05-25 13:14:32
+375,142,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,,,48.5,2025-11-03 06:14:32
+378,36,,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Refactored to follow Single Responsibility Principle.,library,1,,,31.2,2025-08-08 20:14:32
+380,24,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,design_pattern,1,,,37.9,2025-07-02 02:14:32
+383,127,,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,design_pattern,1,,,28.2,2025-09-13 23:14:32
+384,127,,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Refactored to follow Single Responsibility Principle.,algorithm,1,,,20.5,2025-09-15 00:14:32
+385,127,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,optimization,1,,,47.0,2025-09-14 21:14:32
+388,128,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",This approach uses built-in language features for better performance.,design_pattern,1,,,20.3,2025-07-10 05:14:32
+389,128,,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,,,22.7,2025-07-09 00:14:32
+392,101,,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,design_pattern,1,,,48.0,2025-03-15 22:14:32
+393,101,,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,,,40.3,2025-03-15 10:14:32
+396,108,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",This approach uses built-in language features for better performance.,library,1,,,30.0,2025-04-08 06:14:32
+397,108,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,library,1,,,47.5,2025-04-07 07:14:32
+400,26,,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Implemented caching to reduce redundant computations.,algorithm,1,,,38.8,2025-05-23 13:14:32
+2,59,1,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Switched to more efficient data structure.,library,1,alternative,Better TypeScript type safety,64.6,2025-01-25 01:14:32
+3,59,1,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,algorithm,2,improvement,Reduced memory usage by 40%,58.4,2025-01-22 19:14:32
+5,81,4,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,alternative,Eliminated race conditions,51.6,2024-12-25 22:14:32
+7,82,6,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,design_pattern,1,refactor,Reduced memory usage by 40%,74.1,2025-04-05 03:14:32
+9,75,8,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,library,2,improvement,Fixed edge cases that caused crashes,41.7,2025-10-04 06:14:32
+10,75,8,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,library,2,improvement,Fixed edge cases that caused crashes,51.2,2025-10-04 23:14:32
+12,69,11,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,library,2,improvement,Better error handling and logging,70.0,2025-04-10 08:14:32
+15,102,14,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Optimized algorithm complexity from O(n²) to O(n log n).,library,2,improvement,Improved response time significantly,70.0,2025-06-18 16:14:32
+16,102,14,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Used async patterns to avoid blocking operations.,library,2,improvement,More readable and maintainable code,55.7,2025-06-20 02:14:32
+19,70,18,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Switched to more efficient data structure.,optimization,2,improvement,Improved response time significantly,58.6,2025-07-05 19:14:32
+22,114,21,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,library,2,improvement,Fixed edge cases that caused crashes,54.5,2025-01-08 10:14:32
+23,114,21,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,optimization,2,improvement,Fixed edge cases that caused crashes,61.1,2025-01-07 08:14:32
+27,93,26,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Applied memoization to cache intermediate results.,library,2,improvement,Better TypeScript type safety,49.4,2025-07-02 15:14:32
+28,93,25,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,algorithm,1,alternative,Reduced memory usage by 40%,65.8,2025-07-03 02:14:32
+30,134,29,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Used async patterns to avoid blocking operations.,design_pattern,2,improvement,Better TypeScript type safety,39.6,2025-01-18 10:14:32
+32,116,31,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,optimization,1,alternative,Reduced memory usage by 40%,68.3,2025-07-18 06:14:32
+35,106,34,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Added proper error handling and edge case validation.,optimization,2,improvement,Reduced database queries,54.4,2025-08-03 20:14:32
+37,43,36,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,design_pattern,2,improvement,Better error handling and logging,60.7,2025-04-23 22:14:32
+40,48,39,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Used async patterns to avoid blocking operations.,library,2,improvement,More readable and maintainable code,65.1,2025-05-04 17:14:32
+44,6,42,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Refactored to follow Single Responsibility Principle.,library,2,improvement,Reduced memory usage by 40%,54.0,2024-12-25 18:14:32
+45,6,42,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Applied memoization to cache intermediate results.,library,2,improvement,Better TypeScript type safety,64.7,2024-12-26 07:14:32
+47,33,46,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,2,improvement,Better error handling and logging,65.0,2025-11-09 01:14:32
+48,33,46,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Applied memoization to cache intermediate results.,design_pattern,1,refactor,Better TypeScript type safety,68.2,2025-11-09 07:14:32
+51,61,50,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,library,1,alternative,More readable and maintainable code,46.0,2025-04-21 11:14:32
+52,61,50,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,library,2,improvement,Better TypeScript type safety,47.5,2025-04-21 12:14:32
+56,65,55,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Added proper error handling and edge case validation.,algorithm,2,improvement,Reduced database queries,40.0,2025-02-07 02:14:32
+57,65,54,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Added proper error handling and edge case validation.,library,2,improvement,Fixed edge cases that caused crashes,49.4,2025-02-04 19:14:32
+60,21,58,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,optimization,1,alternative,Better error handling and logging,45.7,2024-12-02 13:14:32
+65,54,63,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",This approach uses built-in language features for better performance.,algorithm,2,improvement,More readable and maintainable code,67.3,2024-11-19 10:14:32
+66,54,64,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Implemented caching to reduce redundant computations.,design_pattern,1,alternative,Better TypeScript type safety,62.7,2024-11-20 00:14:32
+69,138,67,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,alternative,Fixed edge cases that caused crashes,69.3,2025-10-08 12:14:32
+74,145,73,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Switched to more efficient data structure.,algorithm,2,improvement,Fixed edge cases that caused crashes,45.7,2025-02-09 07:14:32
+75,145,73,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,optimization,1,alternative,Fixed edge cases that caused crashes,61.7,2025-02-10 17:14:32
+77,27,76,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Added proper error handling and edge case validation.,algorithm,1,alternative,Fixed edge cases that caused crashes,62.7,2025-04-19 08:14:32
+80,13,79,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Optimized algorithm complexity from O(n²) to O(n log n).,library,2,improvement,More readable and maintainable code,73.7,2024-12-10 03:14:32
+81,13,78,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,algorithm,1,refactor,Better TypeScript type safety,80.1,2024-12-11 15:14:32
+83,9,82,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,optimization,2,improvement,Reduced database queries,58.7,2025-08-28 02:14:32
+85,120,84,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,alternative,More readable and maintainable code,54.7,2025-06-10 11:14:32
+88,113,87,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,alternative,Fixed edge cases that caused crashes,41.2,2025-05-18 07:14:32
+91,141,90,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,design_pattern,2,improvement,More readable and maintainable code,50.1,2025-09-20 09:14:32
+92,141,89,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Applied memoization to cache intermediate results.,algorithm,2,improvement,Better TypeScript type safety,62.6,2025-09-19 04:14:32
+96,71,94,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,algorithm,1,alternative,Reduced database queries,62.2,2025-09-04 06:14:32
+97,71,95,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,library,2,improvement,Better error handling and logging,47.7,2025-09-06 16:14:32
+99,7,98,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,optimization,2,improvement,Improved response time significantly,57.4,2025-10-26 19:14:32
+103,4,102,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Applied memoization to cache intermediate results.,library,2,improvement,Better error handling and logging,52.1,2025-03-01 13:14:32
+104,4,102,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,algorithm,1,refactor,Reduced database queries,55.9,2025-02-28 13:14:32
+106,99,105,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,design_pattern,2,improvement,Reduced database queries,63.4,2025-02-02 12:14:32
+109,51,108,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Switched to more efficient data structure.,library,2,improvement,Improved response time significantly,79.3,2024-11-09 05:14:32
+113,68,111,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,library,2,improvement,More readable and maintainable code,50.0,2025-05-10 21:14:32
+118,98,116,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,More readable and maintainable code,53.4,2025-07-16 02:14:32
+119,98,117,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,library,2,improvement,Better TypeScript type safety,54.2,2025-07-17 05:14:32
+121,11,120,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Refactored to follow Single Responsibility Principle.,optimization,2,improvement,Reduced database queries,77.8,2024-12-16 00:14:32
+123,14,122,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,library,1,alternative,Better TypeScript type safety,53.5,2025-08-19 03:14:32
+125,34,124,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,design_pattern,1,alternative,Better TypeScript type safety,52.2,2025-08-15 07:14:32
+130,80,128,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,design_pattern,2,improvement,More readable and maintainable code,57.3,2025-06-09 07:14:32
+131,80,127,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,algorithm,1,refactor,Improved response time significantly,44.5,2025-06-08 18:14:32
+135,20,133,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,library,2,improvement,Better TypeScript type safety,63.7,2025-01-26 13:14:32
+138,115,137,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,algorithm,2,improvement,Reduced database queries,56.9,2024-12-23 02:14:32
+139,115,137,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Applied memoization to cache intermediate results.,optimization,2,improvement,Reduced database queries,68.0,2024-12-23 19:14:32
+141,84,140,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,design_pattern,1,alternative,Eliminated race conditions,49.8,2025-10-10 05:14:32
+143,50,142,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,optimization,1,alternative,Improved response time significantly,72.3,2025-06-17 20:14:32
+144,50,142,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Used async patterns to avoid blocking operations.,optimization,1,alternative,Reduced database queries,58.3,2025-06-15 20:14:32
+148,40,147,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",This approach uses built-in language features for better performance.,optimization,2,improvement,Reduced memory usage by 40%,55.7,2024-12-18 18:14:32
+149,40,146,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,optimization,1,refactor,Fixed edge cases that caused crashes,57.8,2024-12-16 03:14:32
+151,30,150,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,design_pattern,1,refactor,Better error handling and logging,56.4,2024-11-20 05:14:32
+153,32,152,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,library,1,refactor,Improved response time significantly,45.7,2025-07-26 14:14:32
+154,32,152,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Reduced database queries,38.5,2025-07-27 02:14:32
+158,95,155,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Better error handling and logging,41.7,2024-12-01 01:14:32
+159,95,156,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,optimization,1,alternative,Fixed edge cases that caused crashes,57.2,2024-11-30 05:14:32
+163,37,160,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Added proper error handling and edge case validation.,optimization,2,improvement,Better error handling and logging,68.7,2025-05-01 08:14:32
+164,37,161,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,library,2,improvement,Reduced database queries,58.1,2025-04-29 22:14:32
+167,57,166,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Added proper error handling and edge case validation.,library,2,improvement,Reduced memory usage by 40%,55.8,2025-02-20 03:14:32
+168,57,166,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Refactored to follow Single Responsibility Principle.,design_pattern,2,improvement,Better error handling and logging,65.6,2025-02-21 09:14:32
+171,149,170,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Used async patterns to avoid blocking operations.,design_pattern,1,alternative,Reduced database queries,69.5,2025-03-10 21:14:32
+174,17,173,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Switched to more efficient data structure.,library,2,improvement,Fixed edge cases that caused crashes,62.1,2025-09-10 13:14:32
+177,100,176,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Added proper error handling and edge case validation.,algorithm,1,alternative,More readable and maintainable code,59.6,2025-04-17 17:14:32
+179,117,178,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",This approach uses built-in language features for better performance.,design_pattern,2,improvement,Eliminated race conditions,60.8,2024-12-17 09:14:32
+182,22,180,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Switched to more efficient data structure.,design_pattern,2,improvement,Reduced memory usage by 40%,74.3,2025-09-02 17:14:32
+183,22,181,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Implemented caching to reduce redundant computations.,optimization,2,improvement,More readable and maintainable code,48.1,2025-09-05 20:14:32
+187,125,186,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Refactored to follow Single Responsibility Principle.,optimization,1,alternative,Eliminated race conditions,64.2,2025-08-28 06:14:32
+191,5,190,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Refactored to follow Single Responsibility Principle.,library,2,improvement,More readable and maintainable code,43.2,2025-10-04 17:14:32
+192,5,189,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Added proper error handling and edge case validation.,library,2,improvement,Better TypeScript type safety,57.6,2025-10-04 16:14:32
+194,85,193,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,2,improvement,Reduced memory usage by 40%,52.0,2025-09-11 13:14:32
+198,46,196,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Applied memoization to cache intermediate results.,design_pattern,1,alternative,Improved response time significantly,64.9,2025-01-11 01:14:32
+199,46,196,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,alternative,Reduced memory usage by 40%,67.4,2025-01-09 18:14:32
+201,42,200,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,design_pattern,2,improvement,Reduced database queries,71.5,2025-07-06 18:14:32
+203,123,202,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,optimization,1,alternative,More readable and maintainable code,63.1,2025-07-30 19:14:32
+206,60,205,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,library,2,improvement,Fixed edge cases that caused crashes,66.5,2025-01-24 12:14:32
+208,144,207,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,2,improvement,Improved response time significantly,52.1,2025-05-31 07:14:32
+213,35,210,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,algorithm,1,refactor,More readable and maintainable code,65.8,2025-08-11 17:14:32
+214,35,210,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Refactored to follow Single Responsibility Principle.,design_pattern,2,improvement,Eliminated race conditions,61.1,2025-08-11 18:14:32
+217,122,215,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Used async patterns to avoid blocking operations.,algorithm,2,improvement,Reduced database queries,41.0,2025-01-10 22:14:32
+218,122,215,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,2,improvement,Fixed edge cases that caused crashes,56.4,2025-01-10 20:14:32
+220,129,219,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Refactored to follow Single Responsibility Principle.,algorithm,2,improvement,Reduced database queries,60.8,2025-07-11 16:14:32
+222,18,221,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Reduced memory usage by 40%,68.5,2025-06-30 08:14:32
+226,89,224,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",This approach uses built-in language features for better performance.,algorithm,2,improvement,Better error handling and logging,43.2,2024-11-21 02:14:32
+229,23,228,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Added proper error handling and edge case validation.,design_pattern,2,improvement,Reduced memory usage by 40%,60.8,2025-03-09 18:14:32
+233,76,230,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Implemented caching to reduce redundant computations.,algorithm,2,improvement,Fixed edge cases that caused crashes,46.4,2025-09-12 04:14:32
+236,77,235,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,1,alternative,Eliminated race conditions,75.6,2024-12-06 14:14:32
+239,150,238,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,design_pattern,1,refactor,Fixed edge cases that caused crashes,76.9,2025-08-06 01:14:32
+241,73,240,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,algorithm,2,improvement,Reduced database queries,64.9,2025-10-17 15:14:32
+245,56,244,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,optimization,1,alternative,More readable and maintainable code,53.9,2025-03-19 10:14:32
+248,140,247,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,design_pattern,2,improvement,Improved response time significantly,46.3,2024-11-13 18:14:32
+252,146,250,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,library,1,alternative,More readable and maintainable code,45.7,2025-05-30 06:14:32
+253,146,251,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,library,1,refactor,More readable and maintainable code,57.4,2025-05-29 03:14:32
+255,107,254,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Applied memoization to cache intermediate results.,optimization,2,improvement,Better error handling and logging,71.6,2025-09-03 23:14:32
+257,45,256,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Applied memoization to cache intermediate results.,library,1,alternative,Reduced memory usage by 40%,67.7,2025-05-19 00:14:32
+258,45,256,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Applied memoization to cache intermediate results.,design_pattern,1,alternative,Reduced database queries,72.9,2025-05-16 13:14:32
+260,62,259,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,library,1,alternative,Reduced database queries,55.3,2025-07-01 21:14:32
+265,109,262,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Added proper error handling and edge case validation.,design_pattern,1,alternative,Improved response time significantly,60.0,2025-10-11 23:14:32
+266,109,264,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Refactored to follow Single Responsibility Principle.,library,1,alternative,Improved response time significantly,54.8,2025-10-12 21:14:32
+268,139,267,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Switched to more efficient data structure.,library,2,improvement,Reduced database queries,61.5,2025-02-10 20:14:32
+271,12,270,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,design_pattern,1,alternative,Better TypeScript type safety,69.0,2025-09-01 07:14:32
+272,12,270,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",This approach uses built-in language features for better performance.,library,1,alternative,More readable and maintainable code,69.0,2025-09-02 06:14:32
+274,86,273,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,refactor,Improved response time significantly,54.4,2025-07-30 04:14:32
+276,147,275,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Applied memoization to cache intermediate results.,optimization,2,improvement,Reduced database queries,66.3,2025-01-28 22:14:32
+279,47,277,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,2,improvement,Improved response time significantly,59.8,2025-02-08 00:14:32
+280,47,277,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Refactored to follow Single Responsibility Principle.,optimization,1,alternative,Eliminated race conditions,74.0,2025-02-09 19:14:32
+282,53,281,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,algorithm,1,alternative,Reduced memory usage by 40%,46.4,2025-03-28 05:14:32
+283,53,281,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",This approach uses built-in language features for better performance.,optimization,1,alternative,Reduced database queries,48.0,2025-03-28 09:14:32
+285,124,284,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,design_pattern,1,alternative,More readable and maintainable code,66.1,2025-09-11 03:14:32
+287,111,286,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,2,improvement,Better error handling and logging,56.1,2025-06-16 15:14:32
+288,111,286,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,optimization,2,improvement,Better error handling and logging,49.6,2025-06-16 07:14:32
+292,64,289,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Added proper error handling and edge case validation.,optimization,2,improvement,Fixed edge cases that caused crashes,40.6,2025-06-23 20:14:32
+293,64,291,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,optimization,2,improvement,More readable and maintainable code,69.5,2025-06-25 21:14:32
+295,1,294,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,optimization,1,refactor,Reduced memory usage by 40%,68.4,2025-02-27 21:14:32
+296,1,294,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,optimization,2,improvement,Reduced database queries,65.8,2025-02-27 11:14:32
+299,79,297,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Optimized algorithm complexity from O(n²) to O(n log n).,library,1,alternative,Reduced memory usage by 40%,64.9,2025-01-14 14:14:32
+303,133,302,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Applied memoization to cache intermediate results.,design_pattern,1,alternative,Fixed edge cases that caused crashes,68.2,2025-04-07 07:14:32
+304,133,301,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Switched to more efficient data structure.,algorithm,1,alternative,Reduced database queries,62.8,2025-04-06 05:14:32
+308,66,307,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,optimization,1,alternative,Better TypeScript type safety,57.3,2025-07-07 08:14:32
+311,49,310,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Applied memoization to cache intermediate results.,design_pattern,2,improvement,Fixed edge cases that caused crashes,56.2,2025-04-13 21:14:32
+314,55,313,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Refactored to follow Single Responsibility Principle.,optimization,2,improvement,Reduced memory usage by 40%,52.6,2025-07-06 14:14:32
+318,126,317,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Applied memoization to cache intermediate results.,optimization,2,improvement,Reduced database queries,72.4,2025-08-23 05:14:32
+319,126,317,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,algorithm,2,improvement,Better error handling and logging,80.6,2025-08-21 05:14:32
+322,83,321,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Refactored to follow Single Responsibility Principle.,optimization,2,improvement,Better TypeScript type safety,50.7,2025-03-05 19:14:32
+323,83,320,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,algorithm,2,improvement,Eliminated race conditions,68.1,2025-03-03 19:14:32
+325,19,324,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Applied memoization to cache intermediate results.,library,2,improvement,Reduced memory usage by 40%,68.4,2025-04-05 14:14:32
+326,19,324,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,optimization,2,improvement,Improved response time significantly,71.5,2025-04-05 10:14:32
+329,31,328,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Switched to more efficient data structure.,optimization,1,alternative,Eliminated race conditions,63.0,2025-03-03 13:14:32
+330,31,327,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Applied memoization to cache intermediate results.,library,2,improvement,Fixed edge cases that caused crashes,69.7,2025-03-01 07:14:32
+332,88,331,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,2,improvement,Fixed edge cases that caused crashes,50.7,2024-12-15 05:14:32
+336,91,334,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,algorithm,1,alternative,Improved response time significantly,58.3,2025-03-08 11:14:32
+337,91,333,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Applied memoization to cache intermediate results.,optimization,2,improvement,Improved response time significantly,48.2,2025-03-08 14:14:32
+341,74,340,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Used async patterns to avoid blocking operations.,library,2,improvement,Reduced database queries,58.1,2025-06-26 08:14:32
+345,105,344,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Optimized algorithm complexity from O(n²) to O(n log n).,design_pattern,1,alternative,Eliminated race conditions,72.5,2025-09-10 05:14:32
+346,105,344,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,design_pattern,1,alternative,Reduced database queries,62.9,2025-09-11 05:14:32
+350,112,349,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Switched to more efficient data structure.,algorithm,2,improvement,Reduced memory usage by 40%,74.3,2024-11-24 12:14:32
+351,112,349,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Implemented caching to reduce redundant computations.,optimization,1,alternative,More readable and maintainable code,58.7,2024-11-22 13:14:32
+353,63,352,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,design_pattern,1,alternative,Better error handling and logging,72.1,2025-05-23 05:14:32
+356,118,355,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Applied memoization to cache intermediate results.,optimization,1,alternative,Reduced database queries,53.1,2025-04-14 03:14:32
+357,118,355,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Implemented caching to reduce redundant computations.,library,2,improvement,Better TypeScript type safety,55.6,2025-04-15 19:14:32
+360,28,358,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Optimized algorithm complexity from O(n²) to O(n log n).,optimization,2,improvement,Reduced memory usage by 40%,45.8,2025-09-20 20:14:32
+361,28,358,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,library,2,improvement,Fixed edge cases that caused crashes,58.4,2025-09-22 16:14:32
+364,131,362,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Applied memoization to cache intermediate results.,library,1,alternative,Eliminated race conditions,64.1,2025-02-05 01:14:32
+369,39,366,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Reduced database queries,52.5,2025-05-16 10:14:32
+373,15,372,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Fixed edge cases that caused crashes,53.9,2025-05-27 19:14:32
+374,15,372,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,library,1,alternative,Better error handling and logging,58.4,2025-05-26 21:14:32
+376,142,375,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,algorithm,2,improvement,More readable and maintainable code,73.2,2025-11-06 06:14:32
+377,142,375,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,optimization,2,improvement,Improved response time significantly,76.5,2025-11-06 00:14:32
+379,36,378,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Optimized algorithm complexity from O(n²) to O(n log n).,library,2,improvement,Reduced memory usage by 40%,46.2,2025-08-09 05:14:32
+381,24,380,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Improved response time significantly,56.1,2025-07-04 06:14:32
+382,24,380,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Switched to more efficient data structure.,library,2,improvement,Eliminated race conditions,64.0,2025-07-03 23:14:32
+386,127,385,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,algorithm,1,alternative,Better TypeScript type safety,72.8,2025-09-15 14:14:32
+387,127,385,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,algorithm,1,alternative,Better TypeScript type safety,69.7,2025-09-16 22:14:32
+390,128,389,"// Use useMemo to cache expensive calculations
+const expensiveValue = useMemo(() => {
+  return computeExpensiveValue(a, b);
+}, [a, b]);",Used async patterns to avoid blocking operations.,algorithm,1,refactor,Better error handling and logging,43.3,2025-07-11 04:14:32
+391,128,388,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Refactored to follow Single Responsibility Principle.,algorithm,2,improvement,Fixed edge cases that caused crashes,38.7,2025-07-10 15:14:32
+394,101,393,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,1,refactor,Better TypeScript type safety,64.0,2025-03-18 03:14:32
+395,101,393,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,optimization,2,improvement,Eliminated race conditions,59.8,2025-03-15 12:14:32
+398,108,397,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Switched to more efficient data structure.,algorithm,2,improvement,Eliminated race conditions,75.0,2025-04-08 17:14:32
+399,108,396,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",This approach uses built-in language features for better performance.,design_pattern,2,improvement,Better error handling and logging,49.8,2025-04-08 17:14:32
+20,70,19,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Optimized algorithm complexity from O(n²) to O(n log n).,algorithm,3,improvement,Eliminated race conditions,89.1,2025-07-08 18:14:32
+33,116,32,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Switched to more efficient data structure.,library,2,improvement,Reduced database queries,95,2025-07-21 01:14:32
+38,43,37,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,optimization,3,improvement,Better error handling and logging,77.5,2025-04-24 19:14:32
+61,21,60,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,library,2,improvement,More readable and maintainable code,68.9,2024-12-03 17:14:32
+70,138,69,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Used async patterns to avoid blocking operations.,design_pattern,1,alternative,Better error handling and logging,95,2025-10-08 14:14:32
+86,120,85,"// Use useCallback to prevent re-renders
+const handleClick = useCallback(() => {
+  setCount(prev => prev + 1);
+}, []);",Applied memoization to cache intermediate results.,algorithm,2,improvement,More readable and maintainable code,75.4,2025-06-11 08:14:32
+107,99,106,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Used async patterns to avoid blocking operations.,optimization,3,improvement,Eliminated race conditions,91.6,2025-02-04 19:14:32
+110,51,109,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Switched to more efficient data structure.,optimization,3,improvement,Reduced database queries,95,2024-11-11 04:14:32
+114,68,113,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Applied memoization to cache intermediate results.,algorithm,3,improvement,More readable and maintainable code,82.8,2025-05-11 05:14:32
+126,34,125,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Switched to more efficient data structure.,design_pattern,1,alternative,Eliminated race conditions,85.6,2025-08-16 19:14:32
+136,20,135,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,library,2,alternative,Reduced database queries,86.6,2025-01-27 18:14:32
+172,149,171,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",This approach uses built-in language features for better performance.,algorithm,2,improvement,Better TypeScript type safety,95,2025-03-13 15:14:32
+175,17,174,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Optimized algorithm complexity from O(n²) to O(n log n).,library,3,improvement,Better TypeScript type safety,95,2025-09-10 18:14:32
+188,125,187,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Used async patterns to avoid blocking operations.,design_pattern,2,improvement,Reduced database queries,83.0,2025-08-30 03:14:32
+195,85,194,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Added proper error handling and edge case validation.,design_pattern,3,improvement,Better TypeScript type safety,85.6,2025-09-13 04:14:32
+204,123,203,"-- Add index for better query performance
+CREATE INDEX idx_user_email ON users(email);
+-- Query time reduced from 500ms to 5ms",Refactored to follow Single Responsibility Principle.,library,2,improvement,More readable and maintainable code,94.8,2025-08-02 09:14:32
+209,144,208,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",This approach uses built-in language features for better performance.,algorithm,2,alternative,More readable and maintainable code,85.2,2025-06-03 00:14:32
+223,18,222,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Used async patterns to avoid blocking operations.,library,2,refactor,Fixed edge cases that caused crashes,95,2025-07-02 06:14:32
+227,89,226,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,library,3,improvement,Eliminated race conditions,72.2,2024-11-23 04:14:32
+234,76,233,"# Context manager for resource handling
+with open('file.txt', 'r') as f:
+    data = f.read()
+# File automatically closed",Implemented caching to reduce redundant computations.,design_pattern,2,refactor,Better error handling and logging,79.9,2025-09-14 01:14:32
+237,77,236,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",Implemented caching to reduce redundant computations.,design_pattern,2,improvement,Better TypeScript type safety,93.5,2024-12-09 07:14:32
+246,56,245,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",This approach uses built-in language features for better performance.,library,2,improvement,Eliminated race conditions,75.3,2025-03-21 08:14:32
+249,140,248,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",This approach uses built-in language features for better performance.,optimization,3,improvement,Reduced database queries,64.7,2024-11-16 13:14:32
+261,62,260,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Used async patterns to avoid blocking operations.,algorithm,2,improvement,Fixed edge cases that caused crashes,84.0,2025-07-02 23:14:32
+300,79,299,"// Promise.all for parallel requests
+const [users, posts] = await Promise.all([
+  fetch('/api/users').then(r => r.json()),
+  fetch('/api/posts').then(r => r.json())
+]);",Applied memoization to cache intermediate results.,algorithm,2,improvement,Eliminated race conditions,95,2025-01-14 19:14:32
+309,66,308,"// Custom hook for data fetching
+function useData(url) {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch(url).then(r => r.json()).then(setData);
+  }, [url]);
+  return data;
+}",Added proper error handling and edge case validation.,library,2,improvement,Reduced database queries,74.1,2025-07-09 16:14:32
+312,49,311,"// Debounce for performance
+const debounce = (fn, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => fn(...args), delay);
+  };
+};",Implemented caching to reduce redundant computations.,algorithm,3,improvement,Improved response time significantly,79.8,2025-04-16 16:14:32
+342,74,341,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,algorithm,3,improvement,Improved response time significantly,92.0,2025-06-28 05:14:32
+354,63,353,"# Use list comprehension for better performance
+result = [x * 2 for x in data if x > 0]
+# Memory efficient, Pythonic approach",Implemented caching to reduce redundant computations.,algorithm,1,alternative,Reduced memory usage by 40%,95,2025-05-25 13:14:32
+365,131,364,"-- Use JOIN instead of subquery
+SELECT u.*, p.title
+FROM users u
+JOIN problems p ON u.user_id = p.user_id
+WHERE p.created_at > NOW() - INTERVAL '7 days';",This approach uses built-in language features for better performance.,optimization,2,improvement,More readable and maintainable code,83.8,2025-02-05 14:14:32
+370,39,369,"# Async/await pattern for concurrent operations
+async def fetch_data():
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()",Added proper error handling and edge case validation.,optimization,3,improvement,More readable and maintainable code,76.2,2025-05-16 23:14:32
