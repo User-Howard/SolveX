@@ -15,7 +15,21 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install"
+	"postCreateCommand": "npm install",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"waderyan.gitblame",
+				"donjayamanne.git-extension-pack",
+				"mhutchie.git-graph",
+				"donjayamanne.githistory",
+				"codezombiech.gitignore",
+				"eamodio.gitlens",
+				"ecmel.vscode-html-css",
+				"ms-vscode.vscode-typescript-next"
+			]
+		}
+	}
 
 	// Configure tool-specific properties.
 	// "customizations": {},
