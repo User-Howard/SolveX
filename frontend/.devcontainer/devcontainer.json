@@ -26,7 +26,9 @@
 				"codezombiech.gitignore",
 				"eamodio.gitlens",
 				"ecmel.vscode-html-css",
-				"ms-vscode.vscode-typescript-next"
+				"ms-vscode.vscode-typescript-next",
+				"bradlc.vscode-tailwindcss",
+				"christian-kohler.npm-intellisense"
 			]
 		}
 	}
