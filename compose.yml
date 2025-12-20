@@ -5,8 +5,8 @@ services:
       POSTGRES_DB: solvex
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
-    ports:
-      - "5432:5432"
+    networks:
+      - backend_net
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -d solvex -U postgres"]
       interval: 10s
@@ -31,6 +31,12 @@ services:
       LOAD_FAKE_DATA: "true"
     ports:
       - "8000:8000"
+    networks:
+      - backend_net
 
 volumes:
   postgres_data:
+
+networks:
+  backend_net:
+    driver: bridge
