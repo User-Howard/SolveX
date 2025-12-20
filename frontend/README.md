@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SolveX Frontend
 
-## Getting Started
+SolveX 前端應用程式，使用 Next.js 16 + React 19 + TypeScript + Tailwind 4 + DaisyUI 5 建構。
 
-First, run the development server:
+## 功能特色
+
+- ✅ 問題列表頁面 - 瀏覽與搜尋問題
+- ✅ 問題詳情頁面 - 查看問題、解法與相關資源
+- ✅ 響應式設計 - 支援手機、平板、桌面
+- ✅ 深色模式支援 - 自動適配系統主題
+- ✅ DaisyUI 元件 - 使用現代化的 UI 元件庫
+
+## 技術棧
+
+- **框架**: Next.js 16 (App Router)
+- **UI 庫**: React 19
+- **樣式**: Tailwind CSS 4 + DaisyUI 5
+- **語言**: TypeScript
+- **API**: 連接到 FastAPI 後端 (http://localhost:8000)
+
+## 開始使用
+
+### 安裝依賴
+
+```bash
+npm install
+```
+
+### 開發模式
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+應用程式將在 http://localhost:3000 啟動
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 建置
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 環境變數
 
-To learn more about Next.js, take a look at the following resources:
+建立 `.env.local` 檔案（可選）：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 專案結構
 
-## Deploy on Vercel
+```
+frontend/
+├── app/                    # Next.js App Router 頁面
+│   ├── problems/          # 問題相關頁面
+│   ├── resources/         # 資源頁面
+│   ├── layout.tsx         # 根布局
+│   ├── page.tsx           # 首頁
+│   └── globals.css        # 全域樣式
+├── components/            # React 元件
+│   ├── layout/           # 布局元件
+│   └── features/         # 功能元件
+├── lib/                  # 工具函式
+│   └── api/             # API 客戶端
+└── types/               # TypeScript 型別定義
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 頁面說明
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 首頁 (/)
+- 展示 SolveX 的介紹與核心功能
+- 快速導航連結
+
+### 問題列表 (/problems)
+- 顯示所有問題
+- 搜尋功能
+- 響應式卡片佈局
+
+### 問題詳情 (/problems/[id])
+- 顯示問題完整資訊
+- 解法列表
+- 相關資源
+- 標記為已解決功能
+
+## 設計規範
+
+遵循 `docs/STYLE_GUIDE.md` 中的設計規範，使用 DaisyUI 元件與 Tailwind CSS 工具類別。
+
+## 開發注意事項
+
+1. 所有頁面元件使用 `'use client'` 因為需要互動功能
+2. API 呼叫使用 `lib/api` 中的客戶端函式
+3. 型別定義在 `types/models.ts`
+4. 遵循 DaisyUI 5 的類別命名規範

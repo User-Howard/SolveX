@@ -1,26 +1,40 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 代码块样式 - 确保深色背景和浅色文字 */
+.mockup-code pre {
+  background-color: #1f2937 !important;
+  color: #f3f4f6 !important;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.mockup-code code {
+  color: #f3f4f6 !important;
+  font-family: var(--font-mono), monospace;
+}
+
+/* 深色模式下的代码块 */
+@media (prefers-color-scheme: dark) {
+  .mockup-code pre {
+    background-color: #111827 !important;
+    color: #e5e7eb !important;
+  }
+  
+  .mockup-code code {
+    color: #e5e7eb !important;
+  }
 }
