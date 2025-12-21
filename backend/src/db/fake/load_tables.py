@@ -2,7 +2,7 @@ from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
-from sqlalchemy import Engine
+from sqlalchemy import Engine, text
 
 BASE_DIR = Path(__file__).resolve().parent
 TABLES_DIR = BASE_DIR / "tables"
@@ -56,6 +56,34 @@ def _coerce_bools(df: pd.DataFrame, columns: List[str]):
             df[column] = df[column].map(_convert)
 
 
+def _reset_sequences(engine: Engine):
+    """Reset PostgreSQL sequences after loading data with explicit IDs."""
+    # List of tables with auto-increment primary keys
+    tables_with_sequences = [
+        ("users", "user_id"),
+        ("problems", "problem_id"),
+        ("solutions", "solution_id"),
+        ("resources", "resource_id"),
+        ("tags", "tag_id"),
+    ]
+
+    with engine.connect() as conn:
+        # Check if we're using PostgreSQL
+        if "postgresql" in engine.dialect.name:
+            for table_name, id_column in tables_with_sequences:
+                # Reset sequence to MAX(id) + 1
+                sql = text(f"""
+                    SELECT setval(
+                        pg_get_serial_sequence('{table_name}', '{id_column}'),
+                        COALESCE((SELECT MAX({id_column}) FROM {table_name}), 1),
+                        true
+                    );
+                """)
+                conn.execute(sql)
+            conn.commit()
+            print("✓ PostgreSQL sequences reset successfully")
+
+
 def load_tables(engine: Engine):
     for table in TABLES:
         csv_path = TABLES_DIR / table["file"]
@@ -65,3 +93,6 @@ def load_tables(engine: Engine):
         _coerce_bools(df, table.get("bool", []))
 
         df.to_sql(table["name"], con=engine, if_exists="append", index=False)
+
+    # Reset sequences after loading all data
+    _reset_sequences(engine)
