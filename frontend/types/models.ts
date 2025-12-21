@@ -7,6 +7,11 @@ export interface User {
   created_at: string;
 }
 
+export interface UserPublic {
+  user_id: number;
+  username: string;
+}
+
 export interface Problem {
   problem_id: number;
   user_id: number;
@@ -16,6 +21,10 @@ export interface Problem {
   resolved: boolean;
   created_at: string;
   updated_at: string;
+}
+
+export interface ProblemWithAuthor extends Problem {
+  author?: UserPublic;
 }
 
 export interface Solution {
@@ -53,7 +62,7 @@ export interface Tag {
 }
 
 export interface ProblemFull {
-  problem: Problem;
+  problem: ProblemWithAuthor;
   solutions: Solution[];
   tags: Tag[];
   linked_resources: Resource[];
@@ -68,4 +77,3 @@ export interface ProblemRelation {
   strength?: number;
   created_at: string;
 }
-
