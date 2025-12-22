@@ -14,9 +14,8 @@ async def lifespan(app: FastAPI):
     if settings.load_fake_data:
         print("loading fake data")
         from .db.fake.load_tables import load_tables
-        from .db.session import engine
 
-        load_tables(engine)
+        load_tables()
     yield
 
 app = FastAPI(lifespan=lifespan)
