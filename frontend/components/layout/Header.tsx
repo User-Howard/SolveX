@@ -96,6 +96,11 @@ export function Header() {
             <li>
               <Link href="/resources">學習資源</Link>
             </li>
+            {user && (
+              <li>
+                <Link href="/account">我的帳號</Link>
+              </li>
+            )}
             {user ? (
               <li>
                 <button type="button" onClick={handleLogout}>
