@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Header } from '@/components/layout/Header';
 import { problemsApi } from '@/lib/api/problems';
 import { tagsApi } from '@/lib/api/tags';
+import { authStorage } from '@/lib/auth';
 import type { Problem } from '@/types/models';
 import type { Tag } from '@/types/models';
 
@@ -14,7 +15,7 @@ export default function NewProblemPage() {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [problemType, setProblemType] = useState('');
-  const [userId, setUserId] = useState('1');
+  const [userId, setUserId] = useState<number | null>(null);
   const [availableTags, setAvailableTags] = useState<Tag[]>([]);
   const [selectedTags, setSelectedTags] = useState<number[]>([]);
   const [tagListOpen, setTagListOpen] = useState(false);
@@ -45,19 +46,24 @@ export default function NewProblemPage() {
     };
   }, []);
 
+  useEffect(() => {
+    const currentUser = authStorage.load();
+    setUserId(currentUser?.user_id ?? null);
+  }, []);
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setError(null);
     setCreatedProblem(null);
 
     const trimmedTitle = title.trim();
-    const parsedUserId = Number(userId);
+    const parsedUserId = userId ?? NaN;
     if (!trimmedTitle) {
       setError('請輸入問題標題');
       return;
     }
     if (!Number.isFinite(parsedUserId) || parsedUserId <= 0) {
-      setError('使用者 ID 必須是正整數');
+      setError('請先登入再建立問題');
       return;
     }
 
@@ -107,7 +113,7 @@ export default function NewProblemPage() {
                 href={`/problems/${createdProblem.problem_id}`}
                 className="btn btn-sm btn-success"
               >
-                查看詳情
+                查看問題
               </Link>
               <button
                 type="button"
@@ -166,25 +172,6 @@ export default function NewProblemPage() {
                     placeholder="例如：Frontend / Backend / Database"
                   />
                 </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="form-control">
-                  <div className="flex items-center space-x-4">
-                    <label className="label w-24">
-                      <span className="label-text">使用者 ID</span>
-                    </label>
-                    <input
-                      type="number"
-                      min={1}
-                      className="input input-bordered flex-1"
-                      value={userId}
-                      onChange={(event) => setUserId(event.target.value)}
-                      required
-                    />
-                  </div>
-                </div>
-
               </div>
 
               <div className="form-control">

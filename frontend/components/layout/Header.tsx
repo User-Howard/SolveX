@@ -1,6 +1,22 @@
+'use client';
+
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { authStorage } from '@/lib/auth';
+import type { User } from '@/types/models';
 
 export function Header() {
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    setUser(authStorage.load());
+  }, []);
+
+  const handleLogout = () => {
+    authStorage.clear();
+    setUser(null);
+  };
+
   return (
     <div className="navbar bg-base-200 shadow-md">
       <div className="navbar-start">
@@ -27,7 +43,29 @@ export function Header() {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end gap-2">
+        {user ? (
+          <>
+            <div className="hidden sm:flex items-center gap-2 text-sm text-base-content/70">
+              <span>已登入:</span>
+              <span className="font-semibold text-base-content">
+                {user.username}
+              </span>
+            </div>
+            <button onClick={handleLogout} className="btn btn-outline btn-sm">
+              登出
+            </button>
+          </>
+        ) : (
+          <>
+            <Link href="/login" className="btn btn-ghost btn-sm">
+              登入
+            </Link>
+            <Link href="/signup" className="btn btn-primary btn-sm">
+              註冊
+            </Link>
+          </>
+        )}
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <svg
@@ -58,10 +96,25 @@ export function Header() {
             <li>
               <Link href="/resources">學習資源</Link>
             </li>
+            {user ? (
+              <li>
+                <button type="button" onClick={handleLogout}>
+                  登出
+                </button>
+              </li>
+            ) : (
+              <>
+                <li>
+                  <Link href="/login">登入</Link>
+                </li>
+                <li>
+                  <Link href="/signup">註冊</Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>
     </div>
   );
 }
-
