@@ -5,13 +5,15 @@ export const usersApi = {
   async createUser(data: {
     username: string;
     email: string;
-    password: string;
     first_name?: string;
     last_name?: string;
   }): Promise<User> {
     return apiClient('/users', {
       method: 'POST',
-      body: JSON.stringify(data),
+      body: JSON.stringify({
+        ...data,
+        password: 'temporary-password',
+      }),
     });
   },
 
