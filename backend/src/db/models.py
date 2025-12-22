@@ -24,7 +24,7 @@ from .session import Base
 class User(Base):
     __tablename__ = "users"
 
-    user_id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     username: Mapped[str] = mapped_column(String(100), nullable=False)
     first_name: Mapped[Optional[str]] = mapped_column(String(50))
     last_name: Mapped[Optional[str]] = mapped_column(String(50))
@@ -46,7 +46,7 @@ class User(Base):
 class Problem(Base):
     __tablename__ = "problems"
 
-    problem_id: Mapped[int] = mapped_column(primary_key=True)
+    problem_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.user_id"), nullable=False)
 
     title: Mapped[str] = mapped_column(String(500), nullable=False)
@@ -92,7 +92,7 @@ class Solution(Base):
         CheckConstraint("success_rate >= 0 AND success_rate <= 100", name="solution_success_rate_range"),
     )
 
-    solution_id: Mapped[int] = mapped_column(primary_key=True)
+    solution_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     problem_id: Mapped[int] = mapped_column(ForeignKey("problems.problem_id"), nullable=False)
     parent_solution_id: Mapped[Optional[int]] = mapped_column(ForeignKey("solutions.solution_id"))
 
@@ -126,7 +126,7 @@ class Resource(Base):
         CheckConstraint("usefulness_score >= 0 AND usefulness_score <= 5", name="resource_usefulness_range"),
     )
 
-    resource_id: Mapped[int] = mapped_column(primary_key=True)
+    resource_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.user_id"), nullable=False)
 
     url: Mapped[str] = mapped_column(Text, nullable=False)
@@ -157,7 +157,7 @@ class Resource(Base):
 class Tag(Base):
     __tablename__ = "tags"
 
-    tag_id: Mapped[int] = mapped_column(primary_key=True)
+    tag_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     tag_name: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
     category: Mapped[Optional[str]] = mapped_column(String(50))
     description: Mapped[Optional[str]] = mapped_column(Text)
