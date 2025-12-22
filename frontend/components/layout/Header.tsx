@@ -25,6 +25,16 @@ export function Header() {
               學習資源
             </Link>
           </li>
+          <li>
+            <Link href="/login" className="btn btn-ghost">
+              登入
+            </Link>
+          </li>
+          <li>
+            <Link href="/signup" className="btn btn-ghost">
+              註冊
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">
@@ -58,10 +68,15 @@ export function Header() {
             <li>
               <Link href="/resources">學習資源</Link>
             </li>
+            <li>
+              <Link href="/login">登入</Link>
+            </li>
+            <li>
+              <Link href="/signup">註冊</Link>
+            </li>
           </ul>
         </div>
       </div>
     </div>
   );
 }
-
