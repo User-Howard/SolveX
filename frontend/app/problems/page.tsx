@@ -39,7 +39,12 @@ export default function ProblemsPage() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold mb-4">問題列表</h1>
+        <div className="flex items-center gap-4 mb-2">
+          <div className="h-10 w-1 rounded-full bg-primary" />
+          <h1 className="text-3xl font-bold tracking-tight">
+            問題列表
+          </h1>
+        </div>          
           <form onSubmit={handleSearch} className="flex gap-2">
             <input
               type="text"

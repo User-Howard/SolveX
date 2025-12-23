@@ -204,9 +204,14 @@ export default function ProblemDetailPage() {
         {/* Solutions Section */}
         <div className="mb-6">
           <h2 className="text-2xl font-bold mb-4">解法 ({data.solutions.length})</h2>
-          <div className="card bg-base-100 shadow-md mb-4">
+        <div className="card bg-pink-50 border border-pink-200 shadow-md mb-4">
             <div className="card-body">
-              <h3 className="text-lg font-semibold mb-2">新增解法</h3>
+        <div className="flex items-center gap-3 mb-4">
+          <div className="h-6 w-1 rounded-full bg-primary" />
+          <h3 className="text-lg font-semibold tracking-tight">
+            新增解法
+          </h3>
+        </div>
               {solutionError && (
                 <div className="alert alert-error mb-3">
                   <span>{solutionError}</span>
@@ -216,7 +221,7 @@ export default function ProblemDetailPage() {
                 <div className="form-control">
                   <div className="flex items-start space-x-4">
                     <label className="label w-24 pt-2">
-                      <span className="label-text">程式碼</span>
+                      <span className="label-text font-semibold text-base-content">程式碼</span>
                     </label>
                     <textarea
                       className="textarea textarea-bordered min-h-[140px] flex-1"
@@ -231,7 +236,7 @@ export default function ProblemDetailPage() {
                 <div className="form-control">
                   <div className="flex items-start space-x-4">
                     <label className="label w-24 pt-2">
-                      <span className="label-text">解法說明</span>
+                      <span className="label-text font-semibold text-base-content">解法說明</span>
                     </label>
                     <textarea
                       className="textarea textarea-bordered flex-1"
@@ -248,7 +253,7 @@ export default function ProblemDetailPage() {
                   <div className="form-control">
                     <div className="flex items-center space-x-4">
                       <label className="label w-24">
-                        <span className="label-text">解法類型</span>
+                        <span className="label-text font-semibold text-base-content">解法類型</span>
                       </label>
                       <input
                         type="text"
@@ -265,7 +270,7 @@ export default function ProblemDetailPage() {
                   <div className="form-control">
                     <div className="flex items-center space-x-4">
                       <label className="label w-24">
-                        <span className="label-text">成功率 (%)</span>
+                        <span className="label-text font-semibold text-base-content">成功率 (%)</span>
                       </label>
                       <input
                         type="number"

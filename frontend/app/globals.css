@@ -2,11 +2,18 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
   root: ":root";
-  include: ;
+/*  include: ;
   exclude: ;
-  prefix: ;
+  prefix: ; */
   logs: true;
 }
+html,
+body {
+  min-height:10%;
+  background:var(--color-base-100);
+  color:var(--color-base-content);
+}
+
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
@@ -15,7 +22,7 @@
 
 /* 代码块样式 - 确保深色背景和浅色文字 */
 .mockup-code pre {
-  background-color: #1f2937 !important;
+  background-color: #0d131b !important;
   color: #f3f4f6 !important;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -30,11 +37,24 @@
 /* 深色模式下的代码块 */
 @media (prefers-color-scheme: dark) {
   .mockup-code pre {
-    background-color: #111827 !important;
+    background-color: #10141e !important;
     color: #e5e7eb !important;
   }
   
   .mockup-code code {
     color: #e5e7eb !important;
+  }
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

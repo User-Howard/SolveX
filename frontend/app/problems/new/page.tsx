@@ -87,7 +87,14 @@ export default function NewProblemPage() {
       <Header />
       <main className="container mx-auto px-4 py-8 max-w-3xl">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold">新增問題</h1>
+
+          <div className="flex items-center gap-4">
+          <div className="h-10 w-1 rounded-full bg-primary" />
+          <h1 className="text-3xl font-bold tracking-tight">
+            新增問題
+          </h1>
+        </div>
+
           <p className="text-base-content/70 mt-2">
             填寫問題資訊，系統將自動寫入資料庫。
           </p>
@@ -120,13 +127,14 @@ export default function NewProblemPage() {
           </div>
         )}
 
-        <div className="card bg-base-100 shadow-lg">
+        <div className="card bg-base-300/70 backdrop-blur shadow-lg border border-base-300">
+
           <div className="card-body">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="form-control">
                 <div className="flex items-center space-x-4">
                   <label className="label w-24">
-                    <span className="label-text">問題標題</span>
+                 <span className="label-text font-semibold text-base-content">問題標題</span>
                   </label>
                   <input
                     type="text"
@@ -142,7 +150,7 @@ export default function NewProblemPage() {
               <div className="form-control">
                 <div className="flex items-start space-x-4">
                   <label className="label w-24 pt-2">
-                    <span className="label-text">問題描述</span>
+                    <span className="label-text font-semibold text-base-content">問題描述</span>
                   </label>
                   <textarea
                     className="textarea textarea-bordered min-h-[120px] flex-1"
@@ -156,7 +164,7 @@ export default function NewProblemPage() {
               <div className="form-control">
                 <div className="flex items-center space-x-4">
                   <label className="label w-24">
-                    <span className="label-text">問題類型</span>
+                    <span className="label-text font-semibold text-base-content">問題類型</span>
                   </label>
                   <input
                     type="text"
@@ -172,7 +180,7 @@ export default function NewProblemPage() {
                 <div className="form-control">
                   <div className="flex items-center space-x-4">
                     <label className="label w-24">
-                      <span className="label-text">使用者 ID</span>
+                      <span className="label-text font-semibold text-base-content">使用者 ID</span>
                     </label>
                     <input
                       type="number"
@@ -190,7 +198,7 @@ export default function NewProblemPage() {
               <div className="form-control">
                 <div className="flex items-start space-x-4">
                   <label className="label w-24 pt-2">
-                    <span className="label-text">標籤</span>
+                    <span className="label-text font-semibold text-base-content">標籤</span>
                   </label>
                   <div className="flex-1 space-y-3">
                     <button
@@ -204,7 +212,7 @@ export default function NewProblemPage() {
                           : '點擊選擇標籤'}
                       </span>
                       <span className="text-base-content/50">
-                        {tagListOpen ? '收合' : '展開'}
+                        {tagListOpen ? '▲' : '▼'}
                       </span>
                     </button>
 
