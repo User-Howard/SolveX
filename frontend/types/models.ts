@@ -41,6 +41,10 @@ export interface Solution {
   created_at: string;
 }
 
+export interface SolutionWithResources extends Solution {
+  resources: ResourceSummary[];
+}
+
 export interface Resource {
   resource_id: number;
   user_id: number;
@@ -65,6 +69,12 @@ export interface ResourceSummary {
   last_visited_at?: string | null;
 }
 
+export interface ProblemResourceSummary {
+  resource: ResourceSummary;
+  relevance_score?: number | null;
+  contribution_type?: string | null;
+}
+
 export interface Tag {
   tag_id: number;
   tag_name: string;
@@ -75,9 +85,9 @@ export interface Tag {
 
 export interface ProblemFull {
   problem: ProblemWithAuthor;
-  solutions: Solution[];
+  solutions: SolutionWithResources[];
   tags: Tag[];
-  linked_resources: Resource[];
+  linked_resources: ProblemResourceSummary[];
   relations_out: ProblemRelation[];
   relations_in: ProblemRelation[];
 }
