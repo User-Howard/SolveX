@@ -9,7 +9,7 @@ from .base import ORMModel
 
 if TYPE_CHECKING:
     from .relations import ProblemRelationRead, ProblemResourceSummary
-    from .solutions import SolutionRead
+    from .solutions import SolutionWithResources
     from .tags import TagRead
     from .users import UserPublic
 
@@ -56,7 +56,7 @@ class ProblemSearchResponse(ORMModel):
 
 class ProblemFull(BaseModel):
     problem: ProblemWithAuthor
-    solutions: list["SolutionRead"]
+    solutions: list["SolutionWithResources"]
     tags: list["TagRead"]
     linked_resources: list["ProblemResourceSummary"]
     relations_out: list["ProblemRelationRead"]

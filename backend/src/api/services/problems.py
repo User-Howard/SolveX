@@ -20,7 +20,39 @@ def build_problem_full(conn: Connection, problem_id: int) -> schemas.ProblemFull
             """,
             (problem_id,),
         )
-        solutions = [schemas.SolutionRead.model_validate(r) for r in cur.fetchall()]
+        solution_rows = cur.fetchall()
+
+    resources_by_solution: dict[int, list[schemas.ResourceRead]] = {
+        row["solution_id"]: [] for row in solution_rows
+    }
+
+    if solution_rows:
+        solution_ids = [row["solution_id"] for row in solution_rows]
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT sr.solution_id, r.*
+                FROM solution_resources sr
+                JOIN resources r ON r.resource_id = sr.resource_id
+                WHERE sr.solution_id = ANY(%s)
+                ORDER BY r.last_visited_at DESC, r.resource_id DESC
+                """,
+                (solution_ids,),
+            )
+            for row in cur.fetchall():
+                resource_data = dict(row)
+                solution_id = resource_data.pop("solution_id")
+                resources_by_solution[solution_id].append(
+                    schemas.ResourceRead.model_validate(resource_data)
+                )
+
+    solutions = [
+        schemas.SolutionWithResources(
+            **schemas.SolutionRead.model_validate(row).model_dump(),
+            resources=resources_by_solution.get(row["solution_id"], []),
+        )
+        for row in solution_rows
+    ]
 
     # 3. Get tags
     with conn.cursor() as cur:
