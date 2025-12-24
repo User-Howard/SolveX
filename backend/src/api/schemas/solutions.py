@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Optional
+from typing import Optional, TYPE_CHECKING
 
 from pydantic import BaseModel, Field
 
@@ -46,10 +46,19 @@ class SolutionDetail(SolutionRead):
     parent_solution: Optional["SolutionRead"] = None
 
 
+if TYPE_CHECKING:
+    from .resources import ResourceRead
+
+
+class SolutionWithResources(SolutionRead):
+    resources: list["ResourceRead"] = Field(default_factory=list)
+
+
 __all__ = [
     "SolutionBase",
     "SolutionCreate",
     "SolutionUpdate",
     "SolutionRead",
     "SolutionDetail",
+    "SolutionWithResources",
 ]

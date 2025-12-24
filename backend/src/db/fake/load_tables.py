@@ -2,7 +2,9 @@ from pathlib import Path
 from typing import Dict, List
 
 import pandas as pd
-from sqlalchemy import Engine, text
+import psycopg
+
+from src.config import settings
 
 BASE_DIR = Path(__file__).resolve().parent
 TABLES_DIR = BASE_DIR / "tables"
@@ -56,9 +58,8 @@ def _coerce_bools(df: pd.DataFrame, columns: List[str]):
             df[column] = df[column].map(_convert)
 
 
-def _reset_sequences(engine: Engine):
+def _reset_sequences(conn: psycopg.Connection):
     """Reset PostgreSQL sequences after loading data with explicit IDs."""
-    # List of tables with auto-increment primary keys
     tables_with_sequences = [
         ("users", "user_id"),
         ("problems", "problem_id"),
@@ -67,32 +68,62 @@ def _reset_sequences(engine: Engine):
         ("tags", "tag_id"),
     ]
 
-    with engine.connect() as conn:
-        # Check if we're using PostgreSQL
-        if "postgresql" in engine.dialect.name:
-            for table_name, id_column in tables_with_sequences:
-                # Reset sequence to MAX(id) + 1
-                sql = text(f"""
-                    SELECT setval(
-                        pg_get_serial_sequence('{table_name}', '{id_column}'),
-                        COALESCE((SELECT MAX({id_column}) FROM {table_name}), 1),
-                        true
-                    );
-                """)
-                conn.execute(sql)
-            conn.commit()
-            print("✓ PostgreSQL sequences reset successfully")
+    with conn.cursor() as cur:
+        for table_name, id_column in tables_with_sequences:
+            cur.execute(
+                f"""
+                SELECT setval(
+                    pg_get_serial_sequence('{table_name}', '{id_column}'),
+                    COALESCE((SELECT MAX({id_column}) FROM {table_name}), 1),
+                    true
+                )
+                """
+            )
+    print("✓ PostgreSQL sequences reset successfully")
 
 
-def load_tables(engine: Engine):
-    for table in TABLES:
-        csv_path = TABLES_DIR / table["file"]
-        df = pd.read_csv(csv_path)
+def load_tables():
+    """Load CSV test data into the database."""
+    with psycopg.connect(settings.database_url) as conn:
+        for table in TABLES:
+            csv_path = TABLES_DIR / table["file"]
+            df = pd.read_csv(csv_path)
 
-        _coerce_datetimes(df, table.get("datetime", []))
-        _coerce_bools(df, table.get("bool", []))
+            # Convert data types
+            _coerce_datetimes(df, table.get("datetime", []))
+            _coerce_bools(df, table.get("bool", []))
 
-        df.to_sql(table["name"], con=engine, if_exists="append", index=False)
+            # Replace NaN with None for proper NULL handling
+            df = df.where(pd.notna(df), None)
 
-    # Reset sequences after loading all data
-    _reset_sequences(engine)
+            # Convert float columns that should be integers
+            for col in df.columns:
+                if df[col].dtype == 'float64':
+                    # Check if this column only has integer values or None
+                    non_null = df[col].dropna()
+                    if len(non_null) > 0 and all(non_null == non_null.astype(int)):
+                        df[col] = df[col].astype('Int64')  # Nullable integer type
+
+            # Convert to list of tuples for bulk insert
+            # Replace pd.NA with None for proper NULL handling
+            records = [
+                tuple(None if pd.isna(val) else val for val in row)
+                for row in df.values
+            ]
+
+            # Build INSERT statement
+            placeholders = ",".join(["%s"] * len(df.columns))
+            table_name = table["name"]
+
+            with conn.cursor() as cur:
+                cur.executemany(
+                    f"INSERT INTO {table_name} VALUES ({placeholders})",
+                    records,
+                )
+
+            print(f"✓ Loaded {len(records)} records into {table_name}")
+
+        # Reset sequences after loading all data
+        _reset_sequences(conn)
+        conn.commit()
+        print("✓ All data loaded successfully")

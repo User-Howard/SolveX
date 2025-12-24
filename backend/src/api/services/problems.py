@@ -1,48 +1,121 @@
 from __future__ import annotations
 
-from sqlalchemy import desc, select
-from sqlalchemy.orm import Session, joinedload
+from psycopg import Connection
 
 from src.api import schemas
 from src.api.routes.utils import get_problem_with_author
-from src.db import models
 
 
-def build_problem_full(session: Session, problem_id: int) -> schemas.ProblemFull:
-    problem = get_problem_with_author(session, problem_id)
-    solutions = session.execute(
-        select(models.Solution)
-        .where(models.Solution.problem_id == problem_id)
-        .order_by(desc(models.Solution.created_at))
-    ).scalars().all()
+def build_problem_full(conn: Connection, problem_id: int) -> schemas.ProblemFull:
+    # 1. Get problem with author
+    problem_data = get_problem_with_author(conn, problem_id)
 
-    tags = [link.tag for link in problem.tags]
+    # 2. Get solutions
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT * FROM solutions
+            WHERE problem_id = %s
+            ORDER BY created_at DESC
+            """,
+            (problem_id,),
+        )
+        solution_rows = cur.fetchall()
 
-    resource_links = session.execute(
-        select(models.ProblemResource)
-        .options(joinedload(models.ProblemResource.resource))
-        .where(models.ProblemResource.problem_id == problem_id)
-    ).scalars().all()
+    resources_by_solution: dict[int, list[schemas.ResourceRead]] = {
+        row["solution_id"]: [] for row in solution_rows
+    }
 
-    relations_out = session.execute(
-        select(models.ProblemRelation).where(models.ProblemRelation.from_problem_id == problem_id)
-    ).scalars().all()
-    relations_in = session.execute(
-        select(models.ProblemRelation).where(models.ProblemRelation.to_problem_id == problem_id)
-    ).scalars().all()
+    if solution_rows:
+        solution_ids = [row["solution_id"] for row in solution_rows]
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT sr.solution_id, r.*
+                FROM solution_resources sr
+                JOIN resources r ON r.resource_id = sr.resource_id
+                WHERE sr.solution_id = ANY(%s)
+                ORDER BY r.last_visited_at DESC, r.resource_id DESC
+                """,
+                (solution_ids,),
+            )
+            for row in cur.fetchall():
+                resource_data = dict(row)
+                solution_id = resource_data.pop("solution_id")
+                resources_by_solution[solution_id].append(
+                    schemas.ResourceRead.model_validate(resource_data)
+                )
+
+    solutions = [
+        schemas.SolutionWithResources(
+            **schemas.SolutionRead.model_validate(row).model_dump(),
+            resources=resources_by_solution.get(row["solution_id"], []),
+        )
+        for row in solution_rows
+    ]
+
+    # 3. Get tags
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT t.* FROM tags t
+            JOIN problem_tags pt ON t.tag_id = pt.tag_id
+            WHERE pt.problem_id = %s
+            """,
+            (problem_id,),
+        )
+        tags = [schemas.TagRead.model_validate(r) for r in cur.fetchall()]
+
+    # 4. Get linked resources with metadata
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT
+                r.*,
+                pr.relevance_score,
+                pr.contribution_type
+            FROM resources r
+            JOIN problem_resources pr ON r.resource_id = pr.resource_id
+            WHERE pr.problem_id = %s
+            """,
+            (problem_id,),
+        )
+        linked_resources = [
+            schemas.ProblemResourceSummary(
+                resource=schemas.ResourceRead.model_validate(r),
+                relevance_score=r["relevance_score"],
+                contribution_type=r["contribution_type"],
+            )
+            for r in cur.fetchall()
+        ]
+
+    # 5. Get outward relations
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT * FROM problem_relations
+            WHERE from_problem_id = %s
+            """,
+            (problem_id,),
+        )
+        relations_out = [schemas.ProblemRelationRead.model_validate(r) for r in cur.fetchall()]
+
+    # 6. Get inward relations
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT * FROM problem_relations
+            WHERE to_problem_id = %s
+            """,
+            (problem_id,),
+        )
+        relations_in = [schemas.ProblemRelationRead.model_validate(r) for r in cur.fetchall()]
 
     return schemas.ProblemFull(
-        problem=schemas.ProblemWithAuthor.model_validate(problem),
-        solutions=[schemas.SolutionRead.model_validate(solution) for solution in solutions],
-        tags=[schemas.TagRead.model_validate(tag) for tag in tags],
-        linked_resources=[
-            schemas.ProblemResourceSummary(
-                resource=schemas.ResourceRead.model_validate(link.resource),
-                relevance_score=link.relevance_score,
-                contribution_type=link.contribution_type,
-            )
-            for link in resource_links
-        ],
-        relations_out=[schemas.ProblemRelationRead.model_validate(rel) for rel in relations_out],
-        relations_in=[schemas.ProblemRelationRead.model_validate(rel) for rel in relations_in],
+        problem=schemas.ProblemWithAuthor.model_validate(problem_data),
+        solutions=solutions,
+        tags=tags,
+        linked_resources=linked_resources,
+        relations_out=relations_out,
+        relations_in=relations_in,
     )

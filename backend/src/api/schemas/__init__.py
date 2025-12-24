@@ -16,6 +16,7 @@ from .solutions import (
     SolutionUpdate,
     SolutionRead,
     SolutionDetail,
+    SolutionWithResources,
 )
 from .resources import (
     ResourceBase,
@@ -57,6 +58,7 @@ __all__ = [
     "SolutionUpdate",
     "SolutionRead",
     "SolutionDetail",
+    "SolutionWithResources",
     "ResourceBase",
     "ResourceCreate",
     "ResourceUpdate",
@@ -82,6 +84,7 @@ __all__ = [
 ProblemWithAuthor.model_rebuild()
 ProblemFull.model_rebuild()
 SolutionDetail.model_rebuild()
+SolutionWithResources.model_rebuild()
 ResourceDetail.model_rebuild()
 ProblemResourceSummary.model_rebuild()
 DashboardResponse.model_rebuild()

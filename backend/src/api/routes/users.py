@@ -1,78 +1,105 @@
 from fastapi import APIRouter, HTTPException, status
-from sqlalchemy import desc, select
-from sqlalchemy.exc import IntegrityError
+from psycopg import errors
 
 from src.api import schemas
-from src.api.deps import SessionDep
+from src.api.deps import ConnectionDep
 from src.api.routes.utils import get_user_or_404
-from src.db import models
 
 
 router = APIRouter(prefix="/users", tags=["users"])
 
 
 @router.post("", response_model=schemas.UserRead, status_code=status.HTTP_201_CREATED)
-def create_user(payload: schemas.UserCreate, session: SessionDep):
-    user = models.User(
-        username=payload.username,
-        email=payload.email,
-        first_name=payload.first_name,
-        last_name=payload.last_name,
-    )
-    session.add(user)
+def create_user(payload: schemas.UserCreate, conn: ConnectionDep):
     try:
-        session.commit()
-    except IntegrityError as exc:
-        session.rollback()
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                INSERT INTO users (username, email, first_name, last_name)
+                VALUES (%s, %s, %s, %s)
+                RETURNING *
+                """,
+                (payload.username, payload.email, payload.first_name, payload.last_name),
+            )
+            row = cur.fetchone()
+        conn.commit()
+        return schemas.UserRead.model_validate(row)
+    except errors.UniqueViolation:
+        conn.rollback()
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Username or email already exists",
-        ) from exc
-    session.refresh(user)
-    return user
+        )
 
 
 @router.get("/{user_id}", response_model=schemas.UserRead)
-def get_user(user_id: int, session: SessionDep):
-    return get_user_or_404(session, user_id)
+def get_user(user_id: int, conn: ConnectionDep):
+    user = get_user_or_404(conn, user_id)
+    return schemas.UserRead.model_validate(user)
 
 
 @router.patch("/{user_id}", response_model=schemas.UserRead)
-def update_user(user_id: int, payload: schemas.UserUpdate, session: SessionDep):
-    user = get_user_or_404(session, user_id)
-    for field, value in payload.model_dump(exclude_unset=True).items():
-        setattr(user, field, value)
+def update_user(user_id: int, payload: schemas.UserUpdate, conn: ConnectionDep):
+    get_user_or_404(conn, user_id)
+    updates = payload.model_dump(exclude_unset=True)
+
+    if not updates:
+        # No fields to update, return existing user
+        user = get_user_or_404(conn, user_id)
+        return schemas.UserRead.model_validate(user)
+
+    # Build dynamic SET clause
+    set_clause = ", ".join([f"{k} = %s" for k in updates.keys()])
+    values = list(updates.values()) + [user_id]
+
     try:
-        session.commit()
-    except IntegrityError as exc:
-        session.rollback()
+        with conn.cursor() as cur:
+            cur.execute(
+                f"UPDATE users SET {set_clause} WHERE user_id = %s RETURNING *",
+                values,
+            )
+            row = cur.fetchone()
+        conn.commit()
+        return schemas.UserRead.model_validate(row)
+    except errors.UniqueViolation:
+        conn.rollback()
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Username or email already exists",
-        ) from exc
-    session.refresh(user)
-    return user
+        )
 
 
 @router.get("/{user_id}/problems", response_model=list[schemas.ProblemListItem])
-def list_user_problems(user_id: int, session: SessionDep):
-    get_user_or_404(session, user_id)
-    stmt = (
-        select(models.Problem)
-        .where(models.Problem.user_id == user_id)
-        .order_by(desc(models.Problem.created_at))
-    )
-    problems = session.execute(stmt).scalars().all()
-    return problems
+def list_user_problems(user_id: int, conn: ConnectionDep):
+    get_user_or_404(conn, user_id)
+
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT * FROM problems
+            WHERE user_id = %s
+            ORDER BY created_at DESC
+            """,
+            (user_id,),
+        )
+        rows = cur.fetchall()
+
+    return [schemas.ProblemListItem.model_validate(row) for row in rows]
 
 
 @router.get("/{user_id}/resources", response_model=list[schemas.ResourceSummary])
-def list_user_resources(user_id: int, session: SessionDep):
-    get_user_or_404(session, user_id)
-    stmt = (
-        select(models.Resource)
-        .where(models.Resource.user_id == user_id)
-        .order_by(desc(models.Resource.last_visited_at), desc(models.Resource.resource_id))
-    )
-    resources = session.execute(stmt).scalars().all()
-    return resources
+def list_user_resources(user_id: int, conn: ConnectionDep):
+    get_user_or_404(conn, user_id)
+
+    with conn.cursor() as cur:
+        cur.execute(
+            """
+            SELECT * FROM resources
+            WHERE user_id = %s
+            ORDER BY last_visited_at DESC, resource_id DESC
+            """,
+            (user_id,),
+        )
+        rows = cur.fetchall()
+
+    return [schemas.ResourceSummary.model_validate(row) for row in rows]
