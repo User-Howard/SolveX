@@ -53,6 +53,18 @@ export interface Resource {
   last_visit_at: string;
 }
 
+export interface ResourceSummary {
+  resource_id: number;
+  user_id: number;
+  url: string;
+  title?: string;
+  source_platform?: string;
+  content_summary?: string;
+  usefulness_score?: number | null;
+  first_visited_at?: string | null;
+  last_visited_at?: string | null;
+}
+
 export interface Tag {
   tag_id: number;
   tag_name: string;
