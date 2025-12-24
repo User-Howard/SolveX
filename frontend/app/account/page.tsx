@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Header } from '@/components/layout/Header';
 import { usersApi } from '@/lib/api/users';
+import { problemsApi } from '@/lib/api/problems';
 import { authStorage } from '@/lib/auth';
 import { ProblemCard } from '@/components/features/ProblemCard';
 import type { Problem, User } from '@/types/models';
@@ -20,6 +21,8 @@ export default function AccountPage() {
   const [formLastName, setFormLastName] = useState('');
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
+  const [deletingProblemId, setDeletingProblemId] = useState<number | null>(null);
 
   useEffect(() => {
     const currentUser = authStorage.load();
@@ -110,6 +113,23 @@ export default function AccountPage() {
       setSaveError(err instanceof Error ? err.message : '更新失敗');
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleDeleteProblem = async (problem: Problem) => {
+    const confirmed = window.confirm('確定要刪除這個問題嗎？此操作無法復原。');
+    if (!confirmed) return;
+    setDeleteError(null);
+    setDeletingProblemId(problem.problem_id);
+    try {
+      await problemsApi.deleteProblem(problem.problem_id);
+      setProblems((prev) =>
+        prev.filter((item) => item.problem_id !== problem.problem_id)
+      );
+    } catch (err) {
+      setDeleteError(err instanceof Error ? err.message : '刪除失敗');
+    } finally {
+      setDeletingProblemId(null);
     }
   };
 
@@ -280,6 +300,12 @@ export default function AccountPage() {
               </Link>
             </div>
 
+            {deleteError && (
+              <div className="alert alert-error mb-4">
+                <span>{deleteError}</span>
+              </div>
+            )}
+
             {loading ? (
               <div className="flex justify-center items-center py-10">
                 <span className="loading loading-spinner loading-lg"></span>
@@ -291,7 +317,20 @@ export default function AccountPage() {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {problems.map((problem) => (
-                  <ProblemCard key={problem.problem_id} problem={problem} />
+                  <ProblemCard
+                    key={problem.problem_id}
+                    problem={problem}
+                    actions={
+                      <button
+                        type="button"
+                        className="btn btn-ghost btn-xs text-error"
+                        onClick={() => handleDeleteProblem(problem)}
+                        disabled={deletingProblemId === problem.problem_id}
+                      >
+                        {deletingProblemId === problem.problem_id ? '刪除中...' : '刪除'}
+                      </button>
+                    }
+                  />
                 ))}
               </div>
             )}

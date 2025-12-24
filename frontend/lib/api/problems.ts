@@ -49,5 +49,10 @@ export const problemsApi = {
       method: 'POST',
     });
   },
-};
 
+  async deleteProblem(problemId: number): Promise<{ deleted: boolean }> {
+    return apiClient(`/problems/${problemId}`, {
+      method: 'DELETE',
+    });
+  },
+};
