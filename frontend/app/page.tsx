@@ -17,7 +17,7 @@ export default function Home() {
                 bg-gradient-to-r 
                 from-blue-500/12 via-violet-500/12 to-purple-500/12
                 bg-[length:200%_200%]
-                animate-[gradientMove_5s_ease-in-out_infinite]
+                animate-[gradientMove_4s_ease-in-out_infinite]
               "
             />
          
@@ -31,24 +31,66 @@ export default function Home() {
               <span className="badge badge-outline">資源整合</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">
-              SolveX
-            </h1>
+              <h1
+                className="
+                  relative mt-3
+                  text-5xl sm:text-6xl lg:text-7xl
+                  font-black tracking-tight
+                  text-[#0b1f3a]
+                  drop-shadow-[0_10px_24px_rgba(3,18,38,0.45)]
+                "
+              >
+                <span
+                  className="
+                    text-transparent bg-clip-text
+                    bg-gradient-to-r
+                    from-[#07162b]
+                  via-[#183d73]
+                    to-[#07162b]
+                    bg-[length:300%_100%]
+                    animate-[deepBlueFlow_6s_linear_infinite]
+                  "
+                >
+                  SolveX
+                </span>
+              </h1>
             <p className="mt-5 text-base sm:text-lg leading-relaxed text-base-content/80">
               程式學習者的知識管理系統
               <br />
-              整合多元學習資源，解決知識碎片化問題
+              整合多元學習資源，整理碎片化知識
             </p>
             <div className="mt-8 flex flex-col gap-3 w-full max-w-sm mx-auto">
-              {/* 主 CTA：瀏覽問題 */}
-              <Link
-                href="/problems"
-                className="btn btn-primary btn-lg w-full"
-              >
-                瀏覽問題
-              </Link>
+           <Link
+                  href="/problems"
+                  className="
+                    btn btn-primary btn-lg w-full
+                    relative overflow-hidden
+                    transition-all duration-300
+                    hover:scale-[1.02]
+                    hover:brightness-110
+                    hover:shadow-[0_0_18px_rgba(59,130,246,0.55),0_0_36px_rgba(168,85,247,0.35)]
+                    active:scale-[0.99]
 
-              {/* 次 CTA：並排，合起來等於上面 */}
+                    before:pointer-events-none
+                    before:absolute
+                    before:inset-y-0
+                    before:left-[-120%]
+                    before:w-[120%]
+                    before:bg-gradient-to-r
+                    before:from-transparent
+                    before:via-white/35
+                    before:to-transparent
+                    before:skew-x-[-20deg]
+
+                    hover:before:left-[120%]
+                    before:transition-all
+                    before:duration-700
+                    before:ease-out
+                  "
+                >
+                  立即瀏覽問題
+                </Link>
+
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/problems/new"
@@ -68,9 +110,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Feature cards */}
         <section className="flex flex-col gap-8">
-          {/* Section header */}
           <div className="flex flex-col items-center text-center gap-2">
             <h2 className="text-2xl font-bold tracking-tight">核心功能</h2>
             <p className="text-sm text-base-content/70">
@@ -78,7 +118,6 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Cards */}
             <div className="flex flex-col md:flex-row gap-6">
               {[
                 {
@@ -129,7 +168,6 @@ export default function Home() {
             </div>
         </section>
 
-        {/* Info */}
         <section>
           <div className="rounded-2xl border border-info/30 bg-info/10 px-5 py-4 text-sm text-base-content/80">
             這是一個簡潔的 prototype，展示 SolveX 的核心功能

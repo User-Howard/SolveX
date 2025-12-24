@@ -1,34 +1,48 @@
+'use client';
+
 import Link from 'next/link';
 import type { Problem } from '@/types/models';
 
 interface ProblemCardProps {
   problem: Problem;
   className?: string;
+  mode?: 'active' | 'deleted';
+  onMoveToDeleted?: (id: number) => void;
+  onRestore?: (id: number) => void;
 }
 
-export function ProblemCard({ problem, className = '' }: ProblemCardProps) {
+export function ProblemCard({
+  problem,
+  className = '',
+  mode = 'active',
+  onMoveToDeleted,
+  onRestore,
+}: ProblemCardProps) {
+  const stop = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+  };
+
   return (
     <Link
       href={`/problems/${problem.problem_id}`}
       className={`
-        card
-        block
-        cursor-pointer
-        transition
-        hover:-translate-y-0.5
-        hover:shadow-lg
-        focus-visible:outline-none
-        focus-visible:ring-2 focus-visible:ring-primary/40
-        ${problem.resolved
-          ? "bg-green-50 border border-green-200 dark:bg-green-900/20 dark:border-green-700/40"
-          : "bg-base-100 shadow-md"}
+        card block cursor-pointer transition
+        hover:-translate-y-0.5 hover:shadow-lg
+        focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40
+        ${mode === 'deleted' ? 'opacity-80' : ''}
+        ${
+          problem.resolved
+            ? 'bg-green-50 border border-green-200 dark:bg-green-900/20 dark:border-green-700/40'
+            : 'bg-base-100 shadow-md'
+        }
         ${className}
       `}
     >
       <div className="card-body">
         <div className="flex items-start justify-between gap-4">
-          <div className="flex-1">
-            <h2 className="card-title text-lg transition-colors group-hover:text-primary">
+          <div className="flex-1 min-w-0">
+            <h2 className="card-title text-lg">
               {problem.title}
             </h2>
 
@@ -47,7 +61,47 @@ export function ProblemCard({ problem, className = '' }: ProblemCardProps) {
         </div>
 
         <div className="card-actions justify-between items-center mt-4">
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
+            {mode === 'active' ? (
+              <button
+                type="button"
+                onClick={(e) => {
+                  stop(e);
+                  onMoveToDeleted?.(problem.problem_id);
+                }}
+                className="
+                btn btn-ghost btn-xs
+                text-blue-900/50
+                hover:text-blue-900
+                hover:bg-blue-900/10
+                opacity-60
+                hover:opacity-100
+                transition
+              "
+              >
+                刪除題目
+              </button>
+            ) : (
+              <button
+                type="button"
+                onClick={(e) => {
+                  stop(e);
+                  onRestore?.(problem.problem_id);
+                }}
+               className="
+                btn btn-ghost btn-xs
+                text-blue-900/50
+                hover:text-blue-900
+                hover:bg-blue-900/10
+                opacity-60
+                hover:opacity-100
+                transition
+              "
+              >
+                還原
+              </button>
+            )}
+
             {problem.problem_type && (
               <div className="badge badge-outline">
                 {problem.problem_type}

@@ -106,26 +106,28 @@ export default function NewProblemPage() {
           </div>
         )}
 
-        {createdProblem && (
-          <div className="alert alert-success mb-4">
-            <span>已建立問題 #{createdProblem.problem_id}</span>
-            <div className="flex gap-2">
-              <Link
-                href={`/problems/${createdProblem.problem_id}`}
-                className="btn btn-sm btn-success"
-              >
-                查看詳情
-              </Link>
-              <button
-                type="button"
-                onClick={() => router.push('/problems')}
-                className="btn btn-sm btn-outline"
-              >
-                返回列表
-              </button>
-            </div>
+              {createdProblem && (
+        <div className="alert alert-success mb-4">
+          <span className="font-semibold">
+            已建立問題 #{createdProblem.problem_id}
+          </span>
+          <div className="flex gap-2">
+            <Link
+              href={`/problems/${createdProblem.problem_id}`}
+              className="btn btn-sm btn-success"
+            >
+              查看詳情
+            </Link>
+            <button
+              type="button"
+              onClick={() => router.push('/problems')}
+              className="btn btn-sm btn-outline"
+            >
+              返回列表
+            </button>
           </div>
-        )}
+        </div>
+      )}
 
         <div className="card bg-base-300/70 backdrop-blur shadow-lg border border-base-300">
 

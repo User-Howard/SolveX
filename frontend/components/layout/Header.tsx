@@ -40,7 +40,6 @@ export function Header() {
     </svg>
   </button>
 
-  {/* 下拉內容 */}
   <ul
     tabIndex={0}
     className="
