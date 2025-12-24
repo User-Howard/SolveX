@@ -10,10 +10,7 @@ export const usersApi = {
   }): Promise<User> {
     return apiClient('/users', {
       method: 'POST',
-      body: JSON.stringify({
-        ...data,
-        password: 'temporary-password',
-      }),
+      body: JSON.stringify(data),
     });
   },
 
