@@ -33,13 +33,14 @@ export default function AccountPage() {
       return;
     }
 
+    const userId = currentUser.user_id;
     let mounted = true;
 
     async function fetchData() {
       try {
         const [freshUser, userProblems] = await Promise.all([
-          usersApi.getUser(currentUser.user_id),
-          usersApi.getUserProblems(currentUser.user_id),
+          usersApi.getUser(userId),
+          usersApi.getUserProblems(userId),
         ]);
         if (!mounted) return;
         setUser(freshUser);

@@ -91,6 +91,7 @@ export default function ProblemDetailPage() {
         approach_type: solutionApproach.trim() || undefined,
         success_rate: parsedSuccessRate,
       });
+      const nextSolution = { ...result, resources: [] };
       setSolutionCode('');
       setSolutionExplanation('');
       setSolutionApproach('');
@@ -99,7 +100,7 @@ export default function ProblemDetailPage() {
         prev
           ? {
               ...prev,
-              solutions: [result, ...prev.solutions],
+              solutions: [nextSolution, ...prev.solutions],
             }
           : prev
       );
