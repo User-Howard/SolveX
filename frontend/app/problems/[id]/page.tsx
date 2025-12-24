@@ -99,7 +99,7 @@ export default function ProblemDetailPage() {
         prev
           ? {
               ...prev,
-              solutions: [result, ...prev.solutions],
+              solutions: [{ ...result, resources: [] }, ...prev.solutions],
             }
           : prev
       );

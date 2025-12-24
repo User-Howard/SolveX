@@ -16,7 +16,7 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
-    password: str = Field(..., min_length=6)
+    pass
 
 
 class UserUpdate(BaseModel):

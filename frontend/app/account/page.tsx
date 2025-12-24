@@ -33,6 +33,7 @@ export default function AccountPage() {
     let mounted = true;
 
     async function fetchData() {
+      if (!currentUser) return;
       try {
         const [freshUser, userProblems] = await Promise.all([
           usersApi.getUser(currentUser.user_id),
