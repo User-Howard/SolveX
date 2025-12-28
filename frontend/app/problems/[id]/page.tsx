@@ -91,6 +91,7 @@ export default function ProblemDetailPage() {
         approach_type: solutionApproach.trim() || undefined,
         success_rate: parsedSuccessRate,
       });
+      const nextSolution = { ...result, resources: [] };
       setSolutionCode('');
       setSolutionExplanation('');
       setSolutionApproach('');
@@ -99,7 +100,7 @@ export default function ProblemDetailPage() {
         prev
           ? {
               ...prev,
-              solutions: [result, ...prev.solutions],
+              solutions: [nextSolution, ...prev.solutions],
             }
           : prev
       );
@@ -334,6 +335,43 @@ export default function ProblemDetailPage() {
                         <span className="badge badge-outline">{solution.approach_type}</span>
                       </div>
                     )}
+                    {solution.resources.length > 0 && (
+                      <div className="mt-4">
+                        <div className="text-sm font-semibold mb-2">
+                          解法相關資源 ({solution.resources.length})
+                        </div>
+                        <div className="space-y-2">
+                          {solution.resources.map((resource) => (
+                            <div
+                              key={`${solution.solution_id}-${resource.resource_id}`}
+                              className="card bg-base-100 shadow-sm"
+                            >
+                              <div className="card-body py-3">
+                                <a
+                                  href={resource.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="link link-primary"
+                                >
+                                  {resource.title || resource.url}
+                                </a>
+                                {resource.content_summary && (
+                                  <p className="text-sm text-base-content/70">
+                                    {resource.content_summary}
+                                  </p>
+                                )}
+                                {resource.usefulness_score !== undefined &&
+                                  resource.usefulness_score !== null && (
+                                    <div className="badge badge-sm">
+                                      評分: {resource.usefulness_score}/5
+                                    </div>
+                                  )}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -346,7 +384,9 @@ export default function ProblemDetailPage() {
           <div className="mb-6">
             <h2 className="text-2xl font-bold mb-4">相關資源 ({data.linked_resources.length})</h2>
             <div className="space-y-2">
-              {data.linked_resources.map((resource, index) => (
+              {data.linked_resources.map((linkedResource, index) => {
+                const resource = linkedResource.resource;
+                return (
                 <div
                   key={`${resource.resource_id}-${resource.url}-${index}`}
                   className="card bg-base-200 shadow-sm"
@@ -365,14 +405,28 @@ export default function ProblemDetailPage() {
                         {resource.content_summary}
                       </p>
                     )}
-                    {resource.usefulness_score !== undefined && (
-                      <div className="badge badge-sm">
-                        評分: {resource.usefulness_score}/5
-                      </div>
-                    )}
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {resource.usefulness_score !== undefined &&
+                        resource.usefulness_score !== null && (
+                          <div className="badge badge-sm">
+                            評分: {resource.usefulness_score}/5
+                          </div>
+                        )}
+                      {linkedResource.relevance_score !== undefined &&
+                        linkedResource.relevance_score !== null && (
+                          <div className="badge badge-sm badge-outline">
+                            關聯度: {linkedResource.relevance_score}
+                          </div>
+                        )}
+                      {linkedResource.contribution_type && (
+                        <div className="badge badge-sm badge-outline">
+                          {linkedResource.contribution_type}
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              ))}
+              )})}
             </div>
           </div>
         )}

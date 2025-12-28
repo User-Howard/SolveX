@@ -18,6 +18,11 @@ export async function apiClient<T>(
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({ detail: 'API request failed' }));
+    // Handle validation errors
+    if (error.detail && Array.isArray(error.detail)) {
+      const messages = error.detail.map((e: any) => `${e.loc?.join('.')}: ${e.msg}`).join(', ');
+      throw new Error(messages);
+    }
     throw new Error(error.detail || 'API request failed');
   }
 

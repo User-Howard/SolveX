@@ -1,12 +1,14 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import type { Problem } from '@/types/models';
 
 interface ProblemCardProps {
   problem: Problem;
   className?: string;
+  actions?: ReactNode;
 }
 
-export function ProblemCard({ problem, className = '' }: ProblemCardProps) {
+export function ProblemCard({ problem, className = '', actions }: ProblemCardProps) {
   return (
     <div className={`card bg-base-100 shadow-md hover:shadow-lg transition-shadow ${className}`}>
       <div className="card-body">
@@ -33,12 +35,14 @@ export function ProblemCard({ problem, className = '' }: ProblemCardProps) {
               <div className="badge badge-outline">{problem.problem_type}</div>
             )}
           </div>
-          <div className="text-xs text-base-content/50">
-            {new Date(problem.created_at).toLocaleDateString('zh-TW')}
+          <div className="flex items-center gap-2">
+            {actions}
+            <div className="text-xs text-base-content/50">
+              {new Date(problem.created_at).toLocaleDateString('zh-TW')}
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
